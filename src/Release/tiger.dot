@@ -1,0 +1,16 @@
+digraph G
+{
+root [label="Y (tiger-left) 0.5\lA (listen)\l" shape=doublecircle labeljust="l"];
+x0row5 [label="Y (tiger-right) 0.97\lA (open-left)\l"];
+x0row2 [label="Y (tiger-right) 0.85\lA (listen)\l"];
+x0row3 [label="Y (tiger-left) 0.97\lA (open-right)\l"];
+x0row1 [label="Y (tiger-left) 0.85\lA (listen)\l"];
+root -> x0row1 [label="o (obs-left) 0.5\l"];
+root -> x0row2 [label="o (obs-right) 0.5\l"];
+x0row1 -> x0row3 [label="o (obs-left) 0.745\l"];
+x0row1 -> root [label="o (obs-right) 0.255\l"];
+x0row3 -> root [label="o (obs-left) 0.5\l"];
+x0row2 -> root [label="o (obs-left) 0.255\l"];
+x0row2 -> x0row5 [label="o (obs-right) 0.745\l"];
+x0row5 -> root [label="o (obs-left) 0.5\l"];
+}

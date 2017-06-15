@@ -1,0 +1,717 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="MathLib">
+      <UniqueIdentifier>{fc7aab1a-3a0d-438f-84ea-ca7c246db71a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{cd62838a-c082-40f7-9aec-b5e8b3edae14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OfflineSolver">
+      <UniqueIdentifier>{0cda1def-fe94-47a3-9176-801849af0a2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{c7ff476f-7e77-477e-ba4c-157253d4d59e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils\SmartPointers">
+      <UniqueIdentifier>{104d26be-90a9-49b5-8425-ca23d4a88ddf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bounds">
+      <UniqueIdentifier>{9e0a95b2-3d27-491a-b55a-f385108da537}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models">
+      <UniqueIdentifier>{c7c6d394-5253-4f38-8b9f-b9eed3f8ff05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models\MOMDP">
+      <UniqueIdentifier>{50dff718-714a-4059-9559-82f375e1e584}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models\MOMDP\CoLoc">
+      <UniqueIdentifier>{a0ae04da-9dff-4e11-8a32-28fbe2ff346e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithms">
+      <UniqueIdentifier>{7d0f7e77-096d-493a-8c16-8d4b058862b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithms\SARSOP">
+      <UniqueIdentifier>{5c37fdd4-c40e-4496-9923-e7151362e1a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithms\HSVI">
+      <UniqueIdentifier>{17498b4b-9371-4b9c-9e44-f5ea0d46f9cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parser">
+      <UniqueIdentifier>{9bb84bfe-df92-437a-b463-43e4efb31ac1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parser\Cassandra">
+      <UniqueIdentifier>{531c8217-d1cb-4947-a8f4-e5386081832f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parser\Cassandra\include">
+      <UniqueIdentifier>{69a808f0-ca26-4540-94b9-0c238517a08c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parser\POMDPX">
+      <UniqueIdentifier>{ad64d2a6-cf50-438f-bcb0-552753bf7732}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="miniposix">
+      <UniqueIdentifier>{e3b59613-f554-4c8e-be11-ee7198c4568a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SimEvlEngine">
+      <UniqueIdentifier>{45a16308-96a4-4bce-ae3a-3564e11d6d7e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MathLib\DenseVector.cpp">
+      <Filter>MathLib</Filter>
+    </ClCompile>
+    <ClCompile Include="MathLib\MathLib.cpp">
+      <Filter>MathLib</Filter>
+    </ClCompile>
+    <ClCompile Include="MathLib\SparseMatrix.cpp">
+      <Filter>MathLib</Filter>
+    </ClCompile>
+    <ClCompile Include="MathLib\SparseVector.cpp">
+      <Filter>MathLib</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Actions.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Belief.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\BeliefCache.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\BeliefCacheSet.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\BeliefForest.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\BeliefTreeNode.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\BeliefWithState.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\MObject.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Observations.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\States.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\UniqueBeliefHeap.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\VariableContainer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="OfflineSolver\GlobalResource.cpp">
+      <Filter>OfflineSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="OfflineSolver\solverUtils.cpp">
+      <Filter>OfflineSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\CPMemUtils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\InfoLog.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\md5.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\md5wrapper.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\SimulationRewardCollector.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\StatsCollector.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Bounds\AlphaPlane.cpp">
+      <Filter>Bounds</Filter>
+    </ClCompile>
+    <ClCompile Include="Bounds\AlphaPlanePool.cpp">
+      <Filter>Bounds</Filter>
+    </ClCompile>
+    <ClCompile Include="Bounds\AlphaPlanePoolSet.cpp">
+      <Filter>Bounds</Filter>
+    </ClCompile>
+    <ClCompile Include="Bounds\AlphaVectorPolicy.cpp">
+      <Filter>Bounds</Filter>
+    </ClCompile>
+    <ClCompile Include="Bounds\BackupAlphaPlaneMOMDP.cpp">
+      <Filter>Bounds</Filter>
+    </ClCompile>
+    <ClCompile Include="Bounds\BackupAlphaPlaneMOMDPLite.cpp">
+      <Filter>Bounds</Filter>
+    </ClCompile>
+    <ClCompile Include="Bounds\BackupBeliefValuePairMOMDP.cpp">
+      <Filter>Bounds</Filter>
+    </ClCompile>
+    <ClCompile Include="Bounds\BackupBeliefValuePairMOMDPLite.cpp">
+      <Filter>Bounds</Filter>
+    </ClCompile>
+    <ClCompile Include="Bounds\BeliefValuePair.cpp">
+      <Filter>Bounds</Filter>
+    </ClCompile>
+    <ClCompile Include="Bounds\BeliefValuePairPool.cpp">
+      <Filter>Bounds</Filter>
+    </ClCompile>
+    <ClCompile Include="Bounds\BeliefValuePairPoolSet.cpp">
+      <Filter>Bounds</Filter>
+    </ClCompile>
+    <ClCompile Include="Bounds\BlindLBInitializer.cpp">
+      <Filter>Bounds</Filter>
+    </ClCompile>
+    <ClCompile Include="Bounds\FastInfUBInitializer.cpp">
+      <Filter>Bounds</Filter>
+    </ClCompile>
+    <ClCompile Include="Bounds\FullObsUBInitializer.cpp">
+      <Filter>Bounds</Filter>
+    </ClCompile>
+    <ClCompile Include="Bounds\PruneAlphaPlane.cpp">
+      <Filter>Bounds</Filter>
+    </ClCompile>
+    <ClCompile Include="Bounds\PruneBeliefValuePair.cpp">
+      <Filter>Bounds</Filter>
+    </ClCompile>
+    <ClCompile Include="Bounds\xml_parse_lib.c">
+      <Filter>Bounds</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\MOMDP\BeliefTransitionMOMDP.cpp">
+      <Filter>Models\MOMDP</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\MOMDP\BeliefTransitionMOMDPLite.cpp">
+      <Filter>Models\MOMDP</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\MOMDP\BooleanVariable.cpp">
+      <Filter>Models\MOMDP</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\MOMDP\IVariable.cpp">
+      <Filter>Models\MOMDP</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\MOMDP\IVariableValue.cpp">
+      <Filter>Models\MOMDP</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\MOMDP\MOMDP.cpp">
+      <Filter>Models\MOMDP</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\MOMDP\MOMDPLite.cpp">
+      <Filter>Models\MOMDP</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\MOMDP\ObservationProbabilities.cpp">
+      <Filter>Models\MOMDP</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\MOMDP\Rewards.cpp">
+      <Filter>Models\MOMDP</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\MOMDP\StateTransitionX.cpp">
+      <Filter>Models\MOMDP</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\MOMDP\StateTransitionXY.cpp">
+      <Filter>Models\MOMDP</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\MOMDP\StateTransitionY.cpp">
+      <Filter>Models\MOMDP</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\MOMDP\Variable.cpp">
+      <Filter>Models\MOMDP</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\MOMDP\VariableCombined.cpp">
+      <Filter>Models\MOMDP</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\MOMDP\VariableRelation.cpp">
+      <Filter>Models\MOMDP</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\MOMDP\VariableValue.cpp">
+      <Filter>Models\MOMDP</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\SARSOP\BinManager.cpp">
+      <Filter>Algorithms\SARSOP</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\SARSOP\BinManagerSet.cpp">
+      <Filter>Algorithms\SARSOP</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\SARSOP\Sample.cpp">
+      <Filter>Algorithms\SARSOP</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\SARSOP\SampleBP.cpp">
+      <Filter>Algorithms\SARSOP</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\SARSOP\SARSOP.cpp">
+      <Filter>Algorithms\SARSOP</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\SARSOP\SARSOPPrune.cpp">
+      <Filter>Algorithms\SARSOP</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\ParserSelector.cpp">
+      <Filter>Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\Cassandra\decision-tree.c">
+      <Filter>Parser\Cassandra</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\Cassandra\imm-reward.c">
+      <Filter>Parser\Cassandra</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\Cassandra\mdpCassandra.c">
+      <Filter>Parser\Cassandra</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\Cassandra\parse_err.c">
+      <Filter>Parser\Cassandra</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\Cassandra\parse_hash.c">
+      <Filter>Parser\Cassandra</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\Cassandra\Parser.cpp">
+      <Filter>Parser\Cassandra</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\Cassandra\POMDP.cpp">
+      <Filter>Parser\Cassandra</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\Cassandra\pomdpCassandraWrapper.cpp">
+      <Filter>Parser\Cassandra</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\Cassandra\sparse-matrix.c">
+      <Filter>Parser\Cassandra</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\Cassandra\include\pomdp_spec.tab.cc">
+      <Filter>Parser\Cassandra\include</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\Cassandra\include\pomdp_spec.yy.cc">
+      <Filter>Parser\Cassandra\include</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\POMDPX\FactoredPomdp.cpp">
+      <Filter>Parser\POMDPX</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\POMDPX\Function.cpp">
+      <Filter>Parser\POMDPX</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\POMDPX\ObsAct.cpp">
+      <Filter>Parser\POMDPX</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\POMDPX\oldPOMDP.cpp">
+      <Filter>Parser\POMDPX</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\POMDPX\PreCEntry.cpp">
+      <Filter>Parser\POMDPX</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\POMDPX\PreCMatrix.cpp">
+      <Filter>Parser\POMDPX</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\POMDPX\SparseEntry.cpp">
+      <Filter>Parser\POMDPX</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\POMDPX\SparseTable.cpp">
+      <Filter>Parser\POMDPX</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\POMDPX\State.cpp">
+      <Filter>Parser\POMDPX</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\POMDPX\StateObsAct.cpp">
+      <Filter>Parser\POMDPX</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\POMDPX\tinystr.cpp">
+      <Filter>Parser\POMDPX</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\POMDPX\tinyxml.cpp">
+      <Filter>Parser\POMDPX</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\POMDPX\tinyxmlerror.cpp">
+      <Filter>Parser\POMDPX</Filter>
+    </ClCompile>
+    <ClCompile Include="Parser\POMDPX\tinyxmlparser.cpp">
+      <Filter>Parser\POMDPX</Filter>
+    </ClCompile>
+    <ClCompile Include="miniposix\getopt.c">
+      <Filter>miniposix</Filter>
+    </ClCompile>
+    <ClCompile Include="miniposix\getopt1.c">
+      <Filter>miniposix</Filter>
+    </ClCompile>
+    <ClCompile Include="miniposix\getopt_init.c">
+      <Filter>miniposix</Filter>
+    </ClCompile>
+    <ClCompile Include="Evaluator\EvaluationEngine.cpp">
+      <Filter>SimEvlEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Evaluator\EvaluatorSampleEngine.cpp">
+      <Filter>SimEvlEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulator\SimulationEngine.cpp">
+      <Filter>SimEvlEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\MOMDP\StateTransitionXXpY.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MathLib\DenseVector.h">
+      <Filter>MathLib</Filter>
+    </ClInclude>
+    <ClInclude Include="MathLib\MathLib.h">
+      <Filter>MathLib</Filter>
+    </ClInclude>
+    <ClInclude Include="MathLib\SparseMatrix.h">
+      <Filter>MathLib</Filter>
+    </ClInclude>
+    <ClInclude Include="MathLib\SparseVector.h">
+      <Filter>MathLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Actions.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Backup.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Belief.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\BeliefCache.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\BeliefCacheRow.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\BeliefCacheSet.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\BeliefForest.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\BeliefTransition.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\BeliefTreeNode.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\BeliefWithState.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Bound.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\BoundSet.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Component.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Const.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\FacmodelStructs.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IndexedTuple.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\MObject.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\MObjectManager.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\MObjectUser.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Observations.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Policy.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\States.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\SymbolSet.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\SymbolSetIterator.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Tuple.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\UniqueBeliefHeap.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\VariableContainer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="OfflineSolver\GlobalResource.h">
+      <Filter>OfflineSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="OfflineSolver\solverUtils.h">
+      <Filter>OfflineSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Cache.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\CPMemUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\CPTimer.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\InfoLog.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\md5.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\md5wrapper.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\SimulationRewardCollector.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\StatsCollector.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Bounds\AlphaPlane.h">
+      <Filter>Bounds</Filter>
+    </ClInclude>
+    <ClInclude Include="Bounds\AlphaPlanePool.h">
+      <Filter>Bounds</Filter>
+    </ClInclude>
+    <ClInclude Include="Bounds\AlphaPlanePoolSet.h">
+      <Filter>Bounds</Filter>
+    </ClInclude>
+    <ClInclude Include="Bounds\AlphaVectorPolicy.h">
+      <Filter>Bounds</Filter>
+    </ClInclude>
+    <ClInclude Include="Bounds\BackupAlphaPlaneMOMDP.h">
+      <Filter>Bounds</Filter>
+    </ClInclude>
+    <ClInclude Include="Bounds\BackupAlphaPlaneMOMDPLite.h">
+      <Filter>Bounds</Filter>
+    </ClInclude>
+    <ClInclude Include="Bounds\BackupBeliefValuePairMOMDP.h">
+      <Filter>Bounds</Filter>
+    </ClInclude>
+    <ClInclude Include="Bounds\BackupBeliefValuePairMOMDPLite.h">
+      <Filter>Bounds</Filter>
+    </ClInclude>
+    <ClInclude Include="Bounds\BeliefValuePair.h">
+      <Filter>Bounds</Filter>
+    </ClInclude>
+    <ClInclude Include="Bounds\BeliefValuePairPool.h">
+      <Filter>Bounds</Filter>
+    </ClInclude>
+    <ClInclude Include="Bounds\BeliefValuePairPoolSet.h">
+      <Filter>Bounds</Filter>
+    </ClInclude>
+    <ClInclude Include="Bounds\BlindLBInitializer.h">
+      <Filter>Bounds</Filter>
+    </ClInclude>
+    <ClInclude Include="Bounds\FastInfUBInitializer.h">
+      <Filter>Bounds</Filter>
+    </ClInclude>
+    <ClInclude Include="Bounds\FullObsUBInitializer.h">
+      <Filter>Bounds</Filter>
+    </ClInclude>
+    <ClInclude Include="Bounds\PruneAlphaPlane.h">
+      <Filter>Bounds</Filter>
+    </ClInclude>
+    <ClInclude Include="Bounds\PruneBeliefValuePair.h">
+      <Filter>Bounds</Filter>
+    </ClInclude>
+    <ClInclude Include="Bounds\xml_parse_lib.h">
+      <Filter>Bounds</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\MOMDP\BeliefTransitionMOMDP.h">
+      <Filter>Models\MOMDP</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\MOMDP\BeliefTransitionMOMDPLite.h">
+      <Filter>Models\MOMDP</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\MOMDP\BooleanVariable.h">
+      <Filter>Models\MOMDP</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\MOMDP\IVariable.h">
+      <Filter>Models\MOMDP</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\MOMDP\IVariableValue.h">
+      <Filter>Models\MOMDP</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\MOMDP\MOMDP.h">
+      <Filter>Models\MOMDP</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\MOMDP\MOMDPLite.h">
+      <Filter>Models\MOMDP</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\MOMDP\ObservationProbabilities.h">
+      <Filter>Models\MOMDP</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\MOMDP\Rewards.h">
+      <Filter>Models\MOMDP</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\MOMDP\StateTransitionX.h">
+      <Filter>Models\MOMDP</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\MOMDP\StateTransitionXY.h">
+      <Filter>Models\MOMDP</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\MOMDP\StateTransitionY.h">
+      <Filter>Models\MOMDP</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\MOMDP\Variable.h">
+      <Filter>Models\MOMDP</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\MOMDP\VariableCombined.h">
+      <Filter>Models\MOMDP</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\MOMDP\VariableRelation.h">
+      <Filter>Models\MOMDP</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\MOMDP\VariableValue.h">
+      <Filter>Models\MOMDP</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\MOMDP\CoLoc\CoLoc.h">
+      <Filter>Models\MOMDP\CoLoc</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\MOMDP\CoLoc\ProblemParams.h">
+      <Filter>Models\MOMDP\CoLoc</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\PointBasedAlgorithm.h">
+      <Filter>Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\SARSOP\AlphaPlaneMaxMeta.h">
+      <Filter>Algorithms\SARSOP</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\SARSOP\BinManager.h">
+      <Filter>Algorithms\SARSOP</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\SARSOP\BinManagerSet.h">
+      <Filter>Algorithms\SARSOP</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\SARSOP\Prune.h">
+      <Filter>Algorithms\SARSOP</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\SARSOP\Sample.h">
+      <Filter>Algorithms\SARSOP</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\SARSOP\SampleBP.h">
+      <Filter>Algorithms\SARSOP</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\SARSOP\SARSOP.h">
+      <Filter>Algorithms\SARSOP</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\SARSOP\SARSOPPrune.h">
+      <Filter>Algorithms\SARSOP</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\ParserSelector.h">
+      <Filter>Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\Cassandra\decision-tree.h">
+      <Filter>Parser\Cassandra</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\Cassandra\imm-reward.h">
+      <Filter>Parser\Cassandra</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\Cassandra\MDP.h">
+      <Filter>Parser\Cassandra</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\Cassandra\mdpCassandra.h">
+      <Filter>Parser\Cassandra</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\Cassandra\parse_constant.h">
+      <Filter>Parser\Cassandra</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\Cassandra\parse_err.h">
+      <Filter>Parser\Cassandra</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\Cassandra\parse_hash.h">
+      <Filter>Parser\Cassandra</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\Cassandra\Parser.h">
+      <Filter>Parser\Cassandra</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\Cassandra\POMDP.h">
+      <Filter>Parser\Cassandra</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\Cassandra\pomdpCassandraWrapper.h">
+      <Filter>Parser\Cassandra</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\Cassandra\sparse-matrix.h">
+      <Filter>Parser\Cassandra</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\POMDPX\FactoredPomdp.h">
+      <Filter>Parser\POMDPX</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\POMDPX\Function.h">
+      <Filter>Parser\POMDPX</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\POMDPX\ObsAct.h">
+      <Filter>Parser\POMDPX</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\POMDPX\oldPOMDP.h">
+      <Filter>Parser\POMDPX</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\POMDPX\POMDPLayer.h">
+      <Filter>Parser\POMDPX</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\POMDPX\PreCEntry.h">
+      <Filter>Parser\POMDPX</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\POMDPX\PreCMatrix.h">
+      <Filter>Parser\POMDPX</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\POMDPX\SparseEntry.h">
+      <Filter>Parser\POMDPX</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\POMDPX\SparseTable.h">
+      <Filter>Parser\POMDPX</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\POMDPX\State.h">
+      <Filter>Parser\POMDPX</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\POMDPX\StateObsAct.h">
+      <Filter>Parser\POMDPX</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\POMDPX\tinystr.h">
+      <Filter>Parser\POMDPX</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\POMDPX\tinyxml.h">
+      <Filter>Parser\POMDPX</Filter>
+    </ClInclude>
+    <ClInclude Include="Parser\POMDPX\UniqueIndex.h">
+      <Filter>Parser\POMDPX</Filter>
+    </ClInclude>
+    <ClInclude Include="miniposix\getopt.h">
+      <Filter>miniposix</Filter>
+    </ClInclude>
+    <ClInclude Include="miniposix\getopt_int.h">
+      <Filter>miniposix</Filter>
+    </ClInclude>
+    <ClInclude Include="Evaluator\EvaluationEngine.h">
+      <Filter>SimEvlEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Evaluator\EvaluatorBeliefTreeNodeTuple.h">
+      <Filter>SimEvlEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Evaluator\EvaluatorSampleEngine.h">
+      <Filter>SimEvlEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulator\SimulationEngine.h">
+      <Filter>SimEvlEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\MOMDP\StateTransitionXXpY.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugWithoutTrace|Win32">
+      <Configuration>DebugWithoutTrace</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0B67BE69-2EAE-4065-B8EB-4280446AD52C}</ProjectGuid>
+    <RootNamespace>momdp</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugWithoutTrace|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugWithoutTrace|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.26419.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugWithoutTrace|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)\miniposix;$(SolutionDir)\Parser\Cassandra\include;$(SolutionDir)\Parser\Cassandra;$(SolutionDir)\Parser\POMDPX;$(SolutionDir)\Parser;$(SolutionDir)\Algorithms;$(SolutionDir)\Algorithms\SARSOP;$(SolutionDir)\Models\MOMDP\CoLoc;$(SolutionDir)\Models\MOMDP;$(SolutionDir)\Evaluator;$(SolutionDir)\Bounds;$(SolutionDir)\Simulator;$(SolutionDir)\OfflineSolver;$(SolutionDir)\Utils;$(SolutionDir)\MathLib;$(SolutionDir)\Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG_TRACE_ON;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)\miniposix;$(SolutionDir)\Parser\Cassandra\include;$(SolutionDir)\Parser\Cassandra;$(SolutionDir)\Parser\POMDPX;$(SolutionDir)\Parser;$(SolutionDir)\Algorithms;$(SolutionDir)\Algorithms\SARSOP;$(SolutionDir)\Models\MOMDP\CoLoc;$(SolutionDir)\Models\MOMDP;$(SolutionDir)\Evaluator;$(SolutionDir)\Bounds;$(SolutionDir)\Simulator;$(SolutionDir)\OfflineSolver;$(SolutionDir)\Utils;$(SolutionDir)\MathLib;$(SolutionDir)\Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugWithoutTrace|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)\miniposix;$(SolutionDir)\Parser\Cassandra\include;$(SolutionDir)\Parser\Cassandra;$(SolutionDir)\Parser\POMDPX;$(SolutionDir)\Parser;$(SolutionDir)\Algorithms;$(SolutionDir)\Algorithms\SARSOP;$(SolutionDir)\Models\MOMDP\CoLoc;$(SolutionDir)\Models\MOMDP;$(SolutionDir)\Evaluator;$(SolutionDir)\Bounds;$(SolutionDir)\Simulator;$(SolutionDir)\OfflineSolver;$(SolutionDir)\Utils;$(SolutionDir)\MathLib;$(SolutionDir)\Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Algorithms\SARSOP\BinManager.cpp" />
+    <ClCompile Include="Algorithms\SARSOP\BinManagerSet.cpp" />
+    <ClCompile Include="Algorithms\SARSOP\Sample.cpp" />
+    <ClCompile Include="Algorithms\SARSOP\SampleBP.cpp" />
+    <ClCompile Include="Algorithms\SARSOP\SARSOP.cpp" />
+    <ClCompile Include="Algorithms\SARSOP\SARSOPPrune.cpp" />
+    <ClCompile Include="Bounds\AlphaPlane.cpp" />
+    <ClCompile Include="Bounds\AlphaPlanePool.cpp" />
+    <ClCompile Include="Bounds\AlphaPlanePoolSet.cpp" />
+    <ClCompile Include="Bounds\AlphaVectorPolicy.cpp" />
+    <ClCompile Include="Bounds\BackupAlphaPlaneMOMDP.cpp" />
+    <ClCompile Include="Bounds\BackupAlphaPlaneMOMDPLite.cpp" />
+    <ClCompile Include="Bounds\BackupBeliefValuePairMOMDP.cpp" />
+    <ClCompile Include="Bounds\BackupBeliefValuePairMOMDPLite.cpp" />
+    <ClCompile Include="Bounds\BeliefValuePair.cpp" />
+    <ClCompile Include="Bounds\BeliefValuePairPool.cpp" />
+    <ClCompile Include="Bounds\BeliefValuePairPoolSet.cpp" />
+    <ClCompile Include="Bounds\BlindLBInitializer.cpp" />
+    <ClCompile Include="Bounds\FastInfUBInitializer.cpp" />
+    <ClCompile Include="Bounds\FullObsUBInitializer.cpp" />
+    <ClCompile Include="Bounds\PruneAlphaPlane.cpp" />
+    <ClCompile Include="Bounds\PruneBeliefValuePair.cpp" />
+    <ClCompile Include="Bounds\xml_parse_lib.c" />
+    <ClCompile Include="Core\Actions.cpp" />
+    <ClCompile Include="Core\Belief.cpp" />
+    <ClCompile Include="Core\BeliefCache.cpp" />
+    <ClCompile Include="Core\BeliefCacheSet.cpp" />
+    <ClCompile Include="Core\BeliefForest.cpp" />
+    <ClCompile Include="Core\BeliefTreeNode.cpp" />
+    <ClCompile Include="Core\BeliefWithState.cpp" />
+    <ClCompile Include="Core\MObject.cpp" />
+    <ClCompile Include="Core\Observations.cpp" />
+    <ClCompile Include="Core\States.cpp" />
+    <ClCompile Include="Core\UniqueBeliefHeap.cpp" />
+    <ClCompile Include="Core\VariableContainer.cpp" />
+    <ClCompile Include="Evaluator\EvaluationEngine.cpp" />
+    <ClCompile Include="Evaluator\EvaluatorSampleEngine.cpp" />
+    <ClCompile Include="MathLib\DenseVector.cpp" />
+    <ClCompile Include="MathLib\MathLib.cpp" />
+    <ClCompile Include="MathLib\SparseMatrix.cpp" />
+    <ClCompile Include="MathLib\SparseVector.cpp" />
+    <ClCompile Include="miniposix\getopt.c" />
+    <ClCompile Include="miniposix\getopt1.c" />
+    <ClCompile Include="miniposix\getopt_init.c" />
+    <ClCompile Include="Models\MOMDP\BeliefTransitionMOMDP.cpp" />
+    <ClCompile Include="Models\MOMDP\BeliefTransitionMOMDPLite.cpp" />
+    <ClCompile Include="Models\MOMDP\BooleanVariable.cpp" />
+    <ClCompile Include="Models\MOMDP\IVariable.cpp" />
+    <ClCompile Include="Models\MOMDP\IVariableValue.cpp" />
+    <ClCompile Include="Models\MOMDP\MOMDP.cpp" />
+    <ClCompile Include="Models\MOMDP\MOMDPLite.cpp" />
+    <ClCompile Include="Models\MOMDP\ObservationProbabilities.cpp" />
+    <ClCompile Include="Models\MOMDP\Rewards.cpp" />
+    <ClCompile Include="Models\MOMDP\StateTransitionX.cpp" />
+    <ClCompile Include="Models\MOMDP\StateTransitionXXpY.cpp" />
+    <ClCompile Include="Models\MOMDP\StateTransitionXY.cpp" />
+    <ClCompile Include="Models\MOMDP\StateTransitionY.cpp" />
+    <ClCompile Include="Models\MOMDP\Variable.cpp" />
+    <ClCompile Include="Models\MOMDP\VariableCombined.cpp" />
+    <ClCompile Include="Models\MOMDP\VariableRelation.cpp" />
+    <ClCompile Include="Models\MOMDP\VariableValue.cpp" />
+    <ClCompile Include="OfflineSolver\GlobalResource.cpp" />
+    <ClCompile Include="OfflineSolver\solverUtils.cpp" />
+    <ClCompile Include="Parser\Cassandra\decision-tree.c" />
+    <ClCompile Include="Parser\Cassandra\imm-reward.c" />
+    <ClCompile Include="Parser\Cassandra\include\pomdp_spec.tab.cc" />
+    <ClCompile Include="Parser\Cassandra\include\pomdp_spec.yy.cc" />
+    <ClCompile Include="Parser\Cassandra\mdpCassandra.c" />
+    <ClCompile Include="Parser\Cassandra\Parser.cpp" />
+    <ClCompile Include="Parser\Cassandra\parse_err.c" />
+    <ClCompile Include="Parser\Cassandra\parse_hash.c" />
+    <ClCompile Include="Parser\Cassandra\POMDP.cpp" />
+    <ClCompile Include="Parser\Cassandra\pomdpCassandraWrapper.cpp" />
+    <ClCompile Include="Parser\Cassandra\sparse-matrix.c" />
+    <ClCompile Include="Parser\ParserSelector.cpp" />
+    <ClCompile Include="Parser\POMDPX\FactoredPomdp.cpp" />
+    <ClCompile Include="Parser\POMDPX\Function.cpp" />
+    <ClCompile Include="Parser\POMDPX\ObsAct.cpp" />
+    <ClCompile Include="Parser\POMDPX\oldPOMDP.cpp" />
+    <ClCompile Include="Parser\POMDPX\PreCEntry.cpp" />
+    <ClCompile Include="Parser\POMDPX\PreCMatrix.cpp" />
+    <ClCompile Include="Parser\POMDPX\SparseEntry.cpp" />
+    <ClCompile Include="Parser\POMDPX\SparseTable.cpp" />
+    <ClCompile Include="Parser\POMDPX\State.cpp" />
+    <ClCompile Include="Parser\POMDPX\StateObsAct.cpp" />
+    <ClCompile Include="Parser\POMDPX\tinystr.cpp" />
+    <ClCompile Include="Parser\POMDPX\tinyxml.cpp" />
+    <ClCompile Include="Parser\POMDPX\tinyxmlerror.cpp" />
+    <ClCompile Include="Parser\POMDPX\tinyxmlparser.cpp" />
+    <ClCompile Include="Simulator\SimulationEngine.cpp" />
+    <ClCompile Include="Utils\CPMemUtils.cpp" />
+    <ClCompile Include="Utils\InfoLog.cpp" />
+    <ClCompile Include="Utils\md5.cpp" />
+    <ClCompile Include="Utils\md5wrapper.cpp" />
+    <ClCompile Include="Utils\SimulationRewardCollector.cpp" />
+    <ClCompile Include="Utils\StatsCollector.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Algorithms\PointBasedAlgorithm.h" />
+    <ClInclude Include="Algorithms\SARSOP\AlphaPlaneMaxMeta.h" />
+    <ClInclude Include="Algorithms\SARSOP\BinManager.h" />
+    <ClInclude Include="Algorithms\SARSOP\BinManagerSet.h" />
+    <ClInclude Include="Algorithms\SARSOP\Prune.h" />
+    <ClInclude Include="Algorithms\SARSOP\Sample.h" />
+    <ClInclude Include="Algorithms\SARSOP\SampleBP.h" />
+    <ClInclude Include="Algorithms\SARSOP\SARSOP.h" />
+    <ClInclude Include="Algorithms\SARSOP\SARSOPPrune.h" />
+    <ClInclude Include="Bounds\AlphaPlane.h" />
+    <ClInclude Include="Bounds\AlphaPlanePool.h" />
+    <ClInclude Include="Bounds\AlphaPlanePoolSet.h" />
+    <ClInclude Include="Bounds\AlphaVectorPolicy.h" />
+    <ClInclude Include="Bounds\BackupAlphaPlaneMOMDP.h" />
+    <ClInclude Include="Bounds\BackupAlphaPlaneMOMDPLite.h" />
+    <ClInclude Include="Bounds\BackupBeliefValuePairMOMDP.h" />
+    <ClInclude Include="Bounds\BackupBeliefValuePairMOMDPLite.h" />
+    <ClInclude Include="Bounds\BeliefValuePair.h" />
+    <ClInclude Include="Bounds\BeliefValuePairPool.h" />
+    <ClInclude Include="Bounds\BeliefValuePairPoolSet.h" />
+    <ClInclude Include="Bounds\BlindLBInitializer.h" />
+    <ClInclude Include="Bounds\FastInfUBInitializer.h" />
+    <ClInclude Include="Bounds\FullObsUBInitializer.h" />
+    <ClInclude Include="Bounds\PruneAlphaPlane.h" />
+    <ClInclude Include="Bounds\PruneBeliefValuePair.h" />
+    <ClInclude Include="Bounds\xml_parse_lib.h" />
+    <ClInclude Include="Core\Actions.h" />
+    <ClInclude Include="Core\Backup.h" />
+    <ClInclude Include="Core\Belief.h" />
+    <ClInclude Include="Core\BeliefCache.h" />
+    <ClInclude Include="Core\BeliefCacheRow.h" />
+    <ClInclude Include="Core\BeliefCacheSet.h" />
+    <ClInclude Include="Core\BeliefForest.h" />
+    <ClInclude Include="Core\BeliefTransition.h" />
+    <ClInclude Include="Core\BeliefTreeNode.h" />
+    <ClInclude Include="Core\BeliefWithState.h" />
+    <ClInclude Include="Core\Bound.h" />
+    <ClInclude Include="Core\BoundSet.h" />
+    <ClInclude Include="Core\Component.h" />
+    <ClInclude Include="Core\Const.h" />
+    <ClInclude Include="Core\FacmodelStructs.h" />
+    <ClInclude Include="Core\IndexedTuple.h" />
+    <ClInclude Include="Core\MObject.h" />
+    <ClInclude Include="Core\MObjectManager.h" />
+    <ClInclude Include="Core\MObjectUser.h" />
+    <ClInclude Include="Core\Observations.h" />
+    <ClInclude Include="Core\Policy.h" />
+    <ClInclude Include="Core\States.h" />
+    <ClInclude Include="Core\SymbolSet.h" />
+    <ClInclude Include="Core\SymbolSetIterator.h" />
+    <ClInclude Include="Core\Tuple.h" />
+    <ClInclude Include="Core\UniqueBeliefHeap.h" />
+    <ClInclude Include="Core\VariableContainer.h" />
+    <ClInclude Include="Evaluator\EvaluationEngine.h" />
+    <ClInclude Include="Evaluator\EvaluatorBeliefTreeNodeTuple.h" />
+    <ClInclude Include="Evaluator\EvaluatorSampleEngine.h" />
+    <ClInclude Include="MathLib\DenseVector.h" />
+    <ClInclude Include="MathLib\MathLib.h" />
+    <ClInclude Include="MathLib\SparseMatrix.h" />
+    <ClInclude Include="MathLib\SparseVector.h" />
+    <ClInclude Include="miniposix\getopt.h" />
+    <ClInclude Include="miniposix\getopt_int.h" />
+    <ClInclude Include="Models\MOMDP\BeliefTransitionMOMDP.h" />
+    <ClInclude Include="Models\MOMDP\BeliefTransitionMOMDPLite.h" />
+    <ClInclude Include="Models\MOMDP\BooleanVariable.h" />
+    <ClInclude Include="Models\MOMDP\CoLoc\CoLoc.h" />
+    <ClInclude Include="Models\MOMDP\CoLoc\ProblemParams.h" />
+    <ClInclude Include="Models\MOMDP\IVariable.h" />
+    <ClInclude Include="Models\MOMDP\IVariableValue.h" />
+    <ClInclude Include="Models\MOMDP\MOMDP.h" />
+    <ClInclude Include="Models\MOMDP\MOMDPLite.h" />
+    <ClInclude Include="Models\MOMDP\ObservationProbabilities.h" />
+    <ClInclude Include="Models\MOMDP\Rewards.h" />
+    <ClInclude Include="Models\MOMDP\StateTransitionX.h" />
+    <ClInclude Include="Models\MOMDP\StateTransitionXXpY.h" />
+    <ClInclude Include="Models\MOMDP\StateTransitionXY.h" />
+    <ClInclude Include="Models\MOMDP\StateTransitionY.h" />
+    <ClInclude Include="Models\MOMDP\Variable.h" />
+    <ClInclude Include="Models\MOMDP\VariableCombined.h" />
+    <ClInclude Include="Models\MOMDP\VariableRelation.h" />
+    <ClInclude Include="Models\MOMDP\VariableValue.h" />
+    <ClInclude Include="OfflineSolver\GlobalResource.h" />
+    <ClInclude Include="OfflineSolver\solverUtils.h" />
+    <ClInclude Include="Parser\Cassandra\decision-tree.h" />
+    <ClInclude Include="Parser\Cassandra\imm-reward.h" />
+    <ClInclude Include="Parser\Cassandra\MDP.h" />
+    <ClInclude Include="Parser\Cassandra\mdpCassandra.h" />
+    <ClInclude Include="Parser\Cassandra\Parser.h" />
+    <ClInclude Include="Parser\Cassandra\parse_constant.h" />
+    <ClInclude Include="Parser\Cassandra\parse_err.h" />
+    <ClInclude Include="Parser\Cassandra\parse_hash.h" />
+    <ClInclude Include="Parser\Cassandra\POMDP.h" />
+    <ClInclude Include="Parser\Cassandra\pomdpCassandraWrapper.h" />
+    <ClInclude Include="Parser\Cassandra\sparse-matrix.h" />
+    <ClInclude Include="Parser\ParserSelector.h" />
+    <ClInclude Include="Parser\POMDPX\FactoredPomdp.h" />
+    <ClInclude Include="Parser\POMDPX\Function.h" />
+    <ClInclude Include="Parser\POMDPX\ObsAct.h" />
+    <ClInclude Include="Parser\POMDPX\oldPOMDP.h" />
+    <ClInclude Include="Parser\POMDPX\POMDPLayer.h" />
+    <ClInclude Include="Parser\POMDPX\PreCEntry.h" />
+    <ClInclude Include="Parser\POMDPX\PreCMatrix.h" />
+    <ClInclude Include="Parser\POMDPX\SparseEntry.h" />
+    <ClInclude Include="Parser\POMDPX\SparseTable.h" />
+    <ClInclude Include="Parser\POMDPX\State.h" />
+    <ClInclude Include="Parser\POMDPX\StateObsAct.h" />
+    <ClInclude Include="Parser\POMDPX\tinystr.h" />
+    <ClInclude Include="Parser\POMDPX\tinyxml.h" />
+    <ClInclude Include="Parser\POMDPX\UniqueIndex.h" />
+    <ClInclude Include="Simulator\SimulationEngine.h" />
+    <ClInclude Include="Utils\Cache.h" />
+    <ClInclude Include="Utils\CPMemUtils.h" />
+    <ClInclude Include="Utils\CPTimer.h" />
+    <ClInclude Include="Utils\InfoLog.h" />
+    <ClInclude Include="Utils\md5.h" />
+    <ClInclude Include="Utils\md5wrapper.h" />
+    <ClInclude Include="Utils\SimulationRewardCollector.h" />
+    <ClInclude Include="Utils\StatsCollector.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

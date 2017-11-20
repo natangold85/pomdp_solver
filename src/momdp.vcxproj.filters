@@ -14,58 +14,58 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
     </Filter>
     <Filter Include="MathLib">
-      <UniqueIdentifier>{fc7aab1a-3a0d-438f-84ea-ca7c246db71a}</UniqueIdentifier>
+      <UniqueIdentifier>{41d39a5b-192f-476c-9605-fdc45a263359}</UniqueIdentifier>
     </Filter>
     <Filter Include="Core">
-      <UniqueIdentifier>{cd62838a-c082-40f7-9aec-b5e8b3edae14}</UniqueIdentifier>
+      <UniqueIdentifier>{2d479417-72f3-4c64-a586-366c900b1bc1}</UniqueIdentifier>
     </Filter>
     <Filter Include="OfflineSolver">
-      <UniqueIdentifier>{0cda1def-fe94-47a3-9176-801849af0a2d}</UniqueIdentifier>
+      <UniqueIdentifier>{fcb2a35a-2009-4e18-8e08-041ce960df96}</UniqueIdentifier>
     </Filter>
     <Filter Include="Utils">
-      <UniqueIdentifier>{c7ff476f-7e77-477e-ba4c-157253d4d59e}</UniqueIdentifier>
+      <UniqueIdentifier>{314720bf-4bbb-4daf-b65e-e5a45e2082cb}</UniqueIdentifier>
     </Filter>
     <Filter Include="Utils\SmartPointers">
-      <UniqueIdentifier>{104d26be-90a9-49b5-8425-ca23d4a88ddf}</UniqueIdentifier>
+      <UniqueIdentifier>{fd7c1231-07e7-4563-81cf-b9848e554054}</UniqueIdentifier>
     </Filter>
     <Filter Include="Bounds">
-      <UniqueIdentifier>{9e0a95b2-3d27-491a-b55a-f385108da537}</UniqueIdentifier>
+      <UniqueIdentifier>{c2c66f71-3482-4bbb-b9c5-7aeeb64591d2}</UniqueIdentifier>
     </Filter>
     <Filter Include="Models">
-      <UniqueIdentifier>{c7c6d394-5253-4f38-8b9f-b9eed3f8ff05}</UniqueIdentifier>
+      <UniqueIdentifier>{26705f66-7df7-4103-985e-972dee961871}</UniqueIdentifier>
     </Filter>
     <Filter Include="Models\MOMDP">
-      <UniqueIdentifier>{50dff718-714a-4059-9559-82f375e1e584}</UniqueIdentifier>
+      <UniqueIdentifier>{2957d81b-bc6e-4f25-9b7b-ff62f1b47cc2}</UniqueIdentifier>
     </Filter>
     <Filter Include="Models\MOMDP\CoLoc">
-      <UniqueIdentifier>{a0ae04da-9dff-4e11-8a32-28fbe2ff346e}</UniqueIdentifier>
+      <UniqueIdentifier>{5e44f640-c772-4f55-b531-34ebba4bc621}</UniqueIdentifier>
     </Filter>
     <Filter Include="Algorithms">
-      <UniqueIdentifier>{7d0f7e77-096d-493a-8c16-8d4b058862b1}</UniqueIdentifier>
+      <UniqueIdentifier>{86182aa9-a03c-4397-a8c7-3cbed879bfb1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Algorithms\SARSOP">
-      <UniqueIdentifier>{5c37fdd4-c40e-4496-9923-e7151362e1a7}</UniqueIdentifier>
+      <UniqueIdentifier>{d0782e68-2a7c-4df0-a602-cc77630a0f76}</UniqueIdentifier>
     </Filter>
     <Filter Include="Algorithms\HSVI">
-      <UniqueIdentifier>{17498b4b-9371-4b9c-9e44-f5ea0d46f9cb}</UniqueIdentifier>
+      <UniqueIdentifier>{d55c313a-9bee-4e15-9c90-d0d5c453f18e}</UniqueIdentifier>
     </Filter>
     <Filter Include="Parser">
-      <UniqueIdentifier>{9bb84bfe-df92-437a-b463-43e4efb31ac1}</UniqueIdentifier>
+      <UniqueIdentifier>{347bba04-3a53-4522-acfa-a73ff443a8fb}</UniqueIdentifier>
     </Filter>
     <Filter Include="Parser\Cassandra">
-      <UniqueIdentifier>{531c8217-d1cb-4947-a8f4-e5386081832f}</UniqueIdentifier>
+      <UniqueIdentifier>{323dc5b1-ecd4-488d-b906-19cf86662744}</UniqueIdentifier>
     </Filter>
     <Filter Include="Parser\Cassandra\include">
-      <UniqueIdentifier>{69a808f0-ca26-4540-94b9-0c238517a08c}</UniqueIdentifier>
+      <UniqueIdentifier>{96da2a5a-88a5-4f56-8d2c-07fbd178e6ed}</UniqueIdentifier>
     </Filter>
     <Filter Include="Parser\POMDPX">
-      <UniqueIdentifier>{ad64d2a6-cf50-438f-bcb0-552753bf7732}</UniqueIdentifier>
+      <UniqueIdentifier>{b6e2fbe8-88e4-4572-b768-3d9885d02baf}</UniqueIdentifier>
     </Filter>
     <Filter Include="miniposix">
-      <UniqueIdentifier>{e3b59613-f554-4c8e-be11-ee7198c4568a}</UniqueIdentifier>
+      <UniqueIdentifier>{e65f53dc-896d-4772-ade3-c6664a566ec3}</UniqueIdentifier>
     </Filter>
     <Filter Include="SimEvlEngine">
-      <UniqueIdentifier>{45a16308-96a4-4bce-ae3a-3564e11d6d7e}</UniqueIdentifier>
+      <UniqueIdentifier>{5d0d712e-903f-4b14-b29f-64c29e1c5b43}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -222,9 +222,6 @@
     <ClCompile Include="Models\MOMDP\StateTransitionX.cpp">
       <Filter>Models\MOMDP</Filter>
     </ClCompile>
-    <ClCompile Include="Models\MOMDP\StateTransitionXY.cpp">
-      <Filter>Models\MOMDP</Filter>
-    </ClCompile>
     <ClCompile Include="Models\MOMDP\StateTransitionY.cpp">
       <Filter>Models\MOMDP</Filter>
     </ClCompile>
@@ -355,7 +352,10 @@
       <Filter>SimEvlEngine</Filter>
     </ClCompile>
     <ClCompile Include="Models\MOMDP\StateTransitionXXpY.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Models\MOMDP</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\MOMDP\StateTransitionXY.cpp">
+      <Filter>Models\MOMDP</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -563,9 +563,6 @@
     <ClInclude Include="Models\MOMDP\StateTransitionX.h">
       <Filter>Models\MOMDP</Filter>
     </ClInclude>
-    <ClInclude Include="Models\MOMDP\StateTransitionXY.h">
-      <Filter>Models\MOMDP</Filter>
-    </ClInclude>
     <ClInclude Include="Models\MOMDP\StateTransitionY.h">
       <Filter>Models\MOMDP</Filter>
     </ClInclude>
@@ -580,9 +577,6 @@
     </ClInclude>
     <ClInclude Include="Models\MOMDP\VariableValue.h">
       <Filter>Models\MOMDP</Filter>
-    </ClInclude>
-    <ClInclude Include="Models\MOMDP\CoLoc\CoLoc.h">
-      <Filter>Models\MOMDP\CoLoc</Filter>
     </ClInclude>
     <ClInclude Include="Models\MOMDP\CoLoc\ProblemParams.h">
       <Filter>Models\MOMDP\CoLoc</Filter>
@@ -711,7 +705,10 @@
       <Filter>SimEvlEngine</Filter>
     </ClInclude>
     <ClInclude Include="Models\MOMDP\StateTransitionXXpY.h">
-      <Filter>Header Files</Filter>
+      <Filter>Models\MOMDP</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\MOMDP\StateTransitionXY.h">
+      <Filter>Models\MOMDP</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

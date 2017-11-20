@@ -1,0 +1,234 @@
+# pomdp file:
+# grid size: 3  target idx: 8
+# SELF:
+# self initial location: 0
+# with atack range of 1.75 (p = 0.5)
+# observation range of 6 (p = 0.9)
+
+# ENEMIES:
+
+# NON-INVOLVED:
+
+# SHELTERS:
+
+discount: 0.95
+values: reward
+states: s0 s1 s2 s3 s4 s5 s6 s7 s8 Win Loss
+actions: North South West East NorthWest NorthEast SouthWest SouthEast Attack
+observations: o0 o1 o2 o3 o4 o5 o6 o7 o8 oWin oLoss
+
+
+start: 
+1 0 0 0 0 0 0 0 0 0 0 
+
+T: * : s8 : Win 1.0000
+
+T: North : s0 : s0 1
+
+T: South : s0 : s0 0.1
+T: South : s0 : s3 0.9
+
+T: West : s0 : s0 1
+
+T: East : s0 : s0 0.1
+T: East : s0 : s1 0.9
+
+T: NorthWest : s0 : s0 1
+
+T: NorthEast : s0 : s0 1
+
+T: SouthWest : s0 : s0 1
+
+T: SouthEast : s0 : s0 0.1
+T: SouthEast : s0 : s4 0.9
+
+T: Attack : s0 : s0 1
+
+T: North : s1 : s1 1
+
+T: South : s1 : s1 0.1
+T: South : s1 : s4 0.9
+
+T: West : s1 : s1 0.1
+T: West : s1 : s0 0.9
+
+T: East : s1 : s1 0.1
+T: East : s1 : s2 0.9
+
+T: NorthWest : s1 : s1 1
+
+T: NorthEast : s1 : s1 1
+
+T: SouthWest : s1 : s1 0.1
+T: SouthWest : s1 : s3 0.9
+
+T: SouthEast : s1 : s1 0.1
+T: SouthEast : s1 : s5 0.9
+
+T: Attack : s1 : s1 1
+
+T: North : s2 : s2 1
+
+T: South : s2 : s2 0.1
+T: South : s2 : s5 0.9
+
+T: West : s2 : s2 0.1
+T: West : s2 : s1 0.9
+
+T: East : s2 : s2 1
+
+T: NorthWest : s2 : s2 1
+
+T: NorthEast : s2 : s2 1
+
+T: SouthWest : s2 : s2 0.1
+T: SouthWest : s2 : s4 0.9
+
+T: SouthEast : s2 : s2 1
+
+T: Attack : s2 : s2 1
+
+T: North : s3 : s3 0.1
+T: North : s3 : s0 0.9
+
+T: South : s3 : s3 0.1
+T: South : s3 : s6 0.9
+
+T: West : s3 : s3 1
+
+T: East : s3 : s3 0.1
+T: East : s3 : s4 0.9
+
+T: NorthWest : s3 : s3 1
+
+T: NorthEast : s3 : s3 0.1
+T: NorthEast : s3 : s1 0.9
+
+T: SouthWest : s3 : s3 1
+
+T: SouthEast : s3 : s3 0.1
+T: SouthEast : s3 : s7 0.9
+
+T: Attack : s3 : s3 1
+
+T: North : s4 : s4 0.1
+T: North : s4 : s1 0.9
+
+T: South : s4 : s4 0.1
+T: South : s4 : s7 0.9
+
+T: West : s4 : s4 0.1
+T: West : s4 : s3 0.9
+
+T: East : s4 : s4 0.1
+T: East : s4 : s5 0.9
+
+T: NorthWest : s4 : s4 0.1
+T: NorthWest : s4 : s0 0.9
+
+T: NorthEast : s4 : s4 0.1
+T: NorthEast : s4 : s2 0.9
+
+T: SouthWest : s4 : s4 0.1
+T: SouthWest : s4 : s6 0.9
+
+T: SouthEast : s4 : s4 0.1
+T: SouthEast : s4 : s8 0.9
+
+T: Attack : s4 : s4 1
+
+T: North : s5 : s5 0.1
+T: North : s5 : s2 0.9
+
+T: South : s5 : s5 0.1
+T: South : s5 : s8 0.9
+
+T: West : s5 : s5 0.1
+T: West : s5 : s4 0.9
+
+T: East : s5 : s5 1
+
+T: NorthWest : s5 : s5 0.1
+T: NorthWest : s5 : s1 0.9
+
+T: NorthEast : s5 : s5 1
+
+T: SouthWest : s5 : s5 0.1
+T: SouthWest : s5 : s7 0.9
+
+T: SouthEast : s5 : s5 1
+
+T: Attack : s5 : s5 1
+
+T: North : s6 : s6 0.1
+T: North : s6 : s3 0.9
+
+T: South : s6 : s6 1
+
+T: West : s6 : s6 1
+
+T: East : s6 : s6 0.1
+T: East : s6 : s7 0.9
+
+T: NorthWest : s6 : s6 1
+
+T: NorthEast : s6 : s6 0.1
+T: NorthEast : s6 : s4 0.9
+
+T: SouthWest : s6 : s6 1
+
+T: SouthEast : s6 : s6 1
+
+T: Attack : s6 : s6 1
+
+T: North : s7 : s7 0.1
+T: North : s7 : s4 0.9
+
+T: South : s7 : s7 1
+
+T: West : s7 : s7 0.1
+T: West : s7 : s6 0.9
+
+T: East : s7 : s7 0.1
+T: East : s7 : s8 0.9
+
+T: NorthWest : s7 : s7 0.1
+T: NorthWest : s7 : s3 0.9
+
+T: NorthEast : s7 : s7 0.1
+T: NorthEast : s7 : s5 0.9
+
+T: SouthWest : s7 : s7 1
+
+T: SouthEast : s7 : s7 1
+
+T: Attack : s7 : s7 1
+
+T: * : Win : s0 1.0000
+T: * : Loss : s0 1.0000
+
+O: * : s0 : o0 1
+
+O: * : s1 : o1 1
+
+O: * : s2 : o2 1
+
+O: * : s3 : o3 1
+
+O: * : s4 : o4 1
+
+O: * : s5 : o5 1
+
+O: * : s6 : o6 1
+
+O: * : s7 : o7 1
+
+O: * : s8 : o8 1
+
+
+O: * : Win : oWin 1.0
+O: * : Loss : oLoss 1.0
+
+R: * : * : * : * 0.0
+R: * : Win : * : * 1
+R: * : Loss : * : * -2

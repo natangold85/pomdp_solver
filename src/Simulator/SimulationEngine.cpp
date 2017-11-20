@@ -125,12 +125,12 @@ namespace momdp
 
     int SimulationEngine::runFor(int iters, const BeliefWithState& startVec, SparseVector startBeliefX, ofstream* streamOut, double& reward, double& expReward)
     { 
-        DEBUG_TRACE(cout << "runFor" << endl; );
-        DEBUG_TRACE(cout << "iters " << iters << endl; );
-        DEBUG_TRACE(cout << "startVec sval " << startVec.sval << endl; );
-        DEBUG_TRACE(startVec.bvec->write(cout) << endl;);
-        DEBUG_TRACE(cout << "startBeliefX" << endl; );
-        DEBUG_TRACE(startBeliefX.write(cout) << endl;);
+        //DEBUG_TRACE(cout << "runFor" << endl; );
+        //DEBUG_TRACE(cout << "iters " << iters << endl; );
+        //DEBUG_TRACE(cout << "startVec sval " << startVec.sval << endl; );
+        //DEBUG_TRACE(startVec.bvec->write(cout) << endl;);
+        //DEBUG_TRACE(cout << "startBeliefX" << endl; );
+        //DEBUG_TRACE(startBeliefX.write(cout) << endl;);
 
         //    double reward = 0, expReward = 0;
         bool enableFiling = false;
@@ -174,14 +174,14 @@ namespace momdp
         actStateCompl->bvec->resize(belSize);
         actStateCompl->bvec->push_back(currUnobsState, 1.0);
 
-        DEBUG_TRACE( cout << "actStateCompl sval " << actStateCompl->sval << endl; );
-        DEBUG_TRACE( actStateCompl->bvec->write(cout) << endl; );
+        //DEBUG_TRACE( cout << "actStateCompl sval " << actStateCompl->sval << endl; );
+        //DEBUG_TRACE( actStateCompl->bvec->write(cout) << endl; );
 
 	currBelSt->sval = startVec.sval;	// if initial x value is not known, set sval as -1
         copy(*currBelSt->bvec, *startVec.bvec);
 
-        DEBUG_TRACE( cout << "currBelSt sval " << currBelSt->sval << endl; );
-        DEBUG_TRACE( currBelSt->bvec->write(cout) << endl; );
+        //DEBUG_TRACE( cout << "currBelSt sval " << currBelSt->sval << endl; );
+        //DEBUG_TRACE( currBelSt->bvec->write(cout) << endl; );
 
         double mult=1;
         CPTimer lapTimer;
@@ -198,7 +198,7 @@ namespace momdp
         vector<int> fhout(xDim,0);
         for(int timeIter = 0; timeIter < iters; timeIter++)
         { 
-            DEBUG_TRACE( cout << "timeIter " << timeIter << endl; );
+            //DEBUG_TRACE( cout << "timeIter " << timeIter << endl; );
 
             if(enableFiling && timeIter == 0)
             {
@@ -460,4 +460,22 @@ namespace momdp
 
         return firstAction;
     }
+
+	void SimulationEngine::GetActionRewardVec(int iters, const BeliefWithState& startVec, SparseVector startBeliefX, std::vector<double> & rewards)
+	{
+		// policy follower state
+		// belief with state
+		SharedPointer<BeliefWithState> nextBelSt;
+		SharedPointer<BeliefWithState> currBelSt(new BeliefWithState());// for policy follower based on known x value	
+
+		currBelSt->sval = startVec.sval;	// if initial x value is not known, set sval as -1
+		copy(*currBelSt->bvec, *startVec.bvec);
+
+
+		for (int a = 0; a < problem->getNumActions(); ++a)
+		{
+			int currAction = policy->getBestActionLookAhead(*currBelSt);
+			policy->GetRewardVec(*currBelSt, rewards);
+		}
+	}
 };

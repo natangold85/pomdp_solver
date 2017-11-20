@@ -34,7 +34,9 @@ namespace momdp
 		int getBestActionLookAhead_alternative(vector<belief_vector>& b, DenseVector& belX);  // SYL07282010 replaced with code which follows RSS09 paper. Input to function is b_x and b_{y|x}.
 		int getBestActionLookAhead_alternative(SharedPointer<belief_vector>& b, DenseVector& belX);  // SYL07282010 replaced with code which follows RSS09 paper. Input to function is b_x and b_y.
 
-		
+		// update reward vec for specific belief state
+		void GetRewardVec(BeliefWithState& b, std::vector<double> & rewardVec);
+
 		bool readFromFile(const std::string& inFileName);
 	};
 }

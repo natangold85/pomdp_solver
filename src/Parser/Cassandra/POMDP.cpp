@@ -111,7 +111,10 @@ namespace momdp {
 		isPOMDPTerminalState.resize(numStates, /* initialValue = */ true);
 		FOR (s, numStates) {
 			FOR (a, numActions) {
-				if ((fabs(1.0 - T[a](s,s)) > OBS_IS_ZERO_EPS) || R(s,a) != 0.0) {
+				if ((fabs(1.0 - T[a](s,s)) > OBS_IS_ZERO_EPS) || R(s,a) != 0.0) 
+				{
+					double p = T[a](s, s);
+					double r = R(s, a);
 					isPOMDPTerminalState[s] = false;
 					break;
 				}

@@ -1,0 +1,24 @@
+﻿Build started 14/11/2017 08:21:13.
+     1>Project "D:\madaan\SARSOP\src\OfflineSolver\OfflineSolver.vcxproj" on node 4 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ID:\madaan\SARSOP\src\\miniposix /ID:\madaan\SARSOP\src\\Parser\Cassandra\include /ID:\madaan\SARSOP\src\\Parser\Cassandra /ID:\madaan\SARSOP\src\\Parser\POMDPX /ID:\madaan\SARSOP\src\\Parser /ID:\madaan\SARSOP\src\\Algorithms /ID:\madaan\SARSOP\src\\Algorithms\SARSOP /ID:\madaan\SARSOP\src\\Models\MOMDP\CoLoc /ID:\madaan\SARSOP\src\\Models\MOMDP /ID:\madaan\SARSOP\src\\Evaluator /ID:\madaan\SARSOP\src\\Bounds /ID:\madaan\SARSOP\src\\Simulator /ID:\madaan\SARSOP\src\\OfflineSolver /ID:\madaan\SARSOP\src\\Utils /ID:\madaan\SARSOP\src\\MathLib /ID:\madaan\SARSOP\src\\Core /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt solver.cpp
+         solver.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>d:\madaan\sarsop\src\bounds\alphaplanepoolset.h(40): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\madaan\sarsop\src\bounds\alphaplanepoolset.h(49): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\madaan\sarsop\src\bounds\alphaplanepoolset.h(77): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\madaan\sarsop\src\bounds\alphaplanepoolset.h(84): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\madaan\sarsop\src\offlinesolver\solver.cpp(281): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\madaan\sarsop\src\offlinesolver\solver.cpp(313): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\madaan\sarsop\src\offlinesolver\solver.cpp(363): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\madaan\sarsop\src\offlinesolver\solver.cpp(411): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\madaan\SARSOP\src\Debug\OfflineSolver.exe" /INCREMENTAL /NOLOGO D:\madaan\SARSOP\src\Debug\momdp.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\madaan\SARSOP\src\Debug\OfflineSolver.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\madaan\SARSOP\src\Debug\OfflineSolver.lib" /MACHINE:X86 /SAFESEH Debug\solver.obj
+         D:\madaan\SARSOP\src\Debug\momdp.lib
+     1>solver.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+         OfflineSolver.vcxproj -> D:\madaan\SARSOP\src\Debug\OfflineSolver.exe
+     1>Done Building Project "D:\madaan\SARSOP\src\OfflineSolver\OfflineSolver.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.86

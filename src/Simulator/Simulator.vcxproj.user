@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LocalDebuggerCommandArguments>--simNum 5 --simLen 70 --policy-file 10x10Grid1x0x1M0E1S45.policy 10x10Grid1x0x1M0E1S45.pomdp</LocalDebuggerCommandArguments>
+    <LocalDebuggerWorkingDirectory>.</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LocalDebuggerCommandArguments>--simLen 100 --simNum 100 --policy-file 5x5Grid2x0x1S16.policy 5x5Grid2x0x1S16.pomdp</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>

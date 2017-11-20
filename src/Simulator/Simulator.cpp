@@ -17,6 +17,8 @@
 
 #include "CPTimer.h"
 
+#define LUT_END_NAME "_sarsopData.bin"
+
 #ifdef _MSC_VER
 #else
 //for timing
@@ -113,6 +115,35 @@ void generateSimLog(SolverParams& p, double& globalExpRew, double& confInterval)
 
 }
 
+std::pair<int, double> FindActionReward(std::vector<std::pair<int, double>> & preferredAction) // NATAN CHANGES
+{
+	int action = preferredAction[0].first;
+	double avgReward = 0.0;
+
+	for (auto v : preferredAction)
+	{
+		assert(action == v.first);
+		avgReward += v.second;
+	}
+
+	avgReward /= preferredAction.size();
+
+	return std::make_pair(action, avgReward);
+}
+
+void Avg(std::vector<std::vector<double>> rewardsVec, int numActions, std::vector<double> results)
+{
+	for (int a = 0; a < numActions; ++a)
+	{
+		double sum = 0.0;
+		for (int sim = 0; sim < rewardsVec.size(); ++sim)
+		{
+			sum += rewardsVec[sim][a];
+		}
+	
+		results[a] = sum / rewardsVec.size();
+	}
+}
 
 int main(int argc, char **argv) 
 {
@@ -186,9 +217,6 @@ int main(int argc, char **argv)
         {
         }
 
-        SimulationRewardCollector rewardCollector;
-        rewardCollector.setup(*p);
-
         ofstream * foutStream = NULL;
         srand(p->seed);//Seed for random number.  Xan
         //cout << p->seed << endl;
@@ -232,42 +260,68 @@ int main(int argc, char **argv)
             startBeliefX.push_back(startBeliefStval->sval, 1.0);
         }
 
+		// natan changes numStates
+		int numStates = problem->isPOMDPTerminalState[0].size();
+		int numActions = problem->getNumActions();
+
         //CPTimer simTimer;
-
-
         if (enableFiling) 
         {
             foutStream = new ofstream(p->outputFile.c_str());
         }
+		std::vector<std::vector<double>> stateActionReward(numStates - 2);
+		//std::vector<std::pair<int, double>> stateActionReward;
+		for (int s = 0; s < numStates - 2; ++s)
+		{
+			//SimulationRewardCollector rewardCollector;
+			//rewardCollector.setup(*p);
 
-        for (int currSim = 0; currSim < p->simNum; currSim++) 
-        {
-            SimulationEngine engine;
-            engine.setup(problem, policy, p);
+			startBeliefStval->bvec->data[0].index = s;
+			belief_vector startBeliefTest;
+			startBeliefTest.resize(problem->XStates->size());
+			startBeliefTest.push_back(startBeliefStval->sval, 1.0);
 
-            double reward = 0, expReward = 0;
+			stateActionReward[s].resize(numActions);
 
-            int firstAction = engine.runFor(p->simLen, *startBeliefStval, startBeliefX, foutStream, reward, expReward);
-            if(firstAction < 0)
-            {
-                // something wrong happend, exit
-                return 0;
-            }
+			SimulationEngine engine;
+			engine.setup(problem, policy, p);
 
-            rewardCollector.addEntry(currSim, reward, expReward);
-            rewardCollector.printReward(currSim);
+			//double reward = 0, expReward = 0;
 
-        }
+			// get reward vec for all actions
+			// normal run - call runFor
+			engine.GetActionRewardVec(p->simLen, *startBeliefStval, startBeliefTest, stateActionReward[s]);
 
-        if (enableFiling) 
-        {
-            foutStream->close();
-        }
+			//rewardCollector.addEntry(currSim, reward, expReward);
 
-        rewardCollector.printFinalReward();
-        DEBUG_LOG( generateSimLog(*p, rewardCollector.globalExpRew, rewardCollector.confInterval); );
+			std::cout << "finished simulating state " << s << "\n";
+			//rewardCollector.printFinalReward();
+		}
 
+		// NATAN CHANGES - save to file
+		std::string lutName(p->problemName);
+		// pop ".pomdp"
+		lutName.pop_back();
+		lutName.pop_back();
+		lutName.pop_back();
+		lutName.pop_back();
+		lutName.pop_back();
+		lutName.pop_back();
+
+		lutName += LUT_END_NAME;
+		std::ofstream lut(lutName, std::ios::out | std::ios::binary);
+		int size = stateActionReward.size();
+		lut.write((char *)&size, sizeof(int));
+		lut.write((char *)&numActions, sizeof(int));
+		for (int s = 0; s < stateActionReward.size(); ++s)
+		{
+			for (int a = 0; a < numActions; ++a)
+			{
+				lut.write((char *)&stateActionReward[s][a], sizeof(double));
+			}
+		}
     }
+
     catch(bad_alloc &e)
     {
         if(GlobalResource::getInstance()->solverParams.memoryLimit == 0)
@@ -278,12 +332,10 @@ int main(int argc, char **argv)
         {
             cout << "Memory limit reached. Please try increase memory limit" << endl;
         }
-
     }
     catch(exception &e)
     {
         cout << "Exception: " << e.what() << endl ;
     }
-    return 0;
 }
 

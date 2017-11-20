@@ -1,0 +1,22 @@
+﻿Build started 14/11/2017 08:21:13.
+     1>Project "D:\madaan\SARSOP\src\Evaluator\Evaluator.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ID:\madaan\SARSOP\src\\miniposix /ID:\madaan\SARSOP\src\\Parser\Cassandra\include /ID:\madaan\SARSOP\src\\Parser\Cassandra /ID:\madaan\SARSOP\src\\Parser\POMDPX /ID:\madaan\SARSOP\src\\Parser /ID:\madaan\SARSOP\src\\Algorithms /ID:\madaan\SARSOP\src\\Algorithms\SARSOP /ID:\madaan\SARSOP\src\\Models\MOMDP /ID:\madaan\SARSOP\src\\Evaluator /ID:\madaan\SARSOP\src\\Bounds /ID:\madaan\SARSOP\src\\Simulator /ID:\madaan\SARSOP\src\\OfflineSolver /ID:\madaan\SARSOP\src\\Utils /ID:\madaan\SARSOP\src\\MathLib /ID:\madaan\SARSOP\src\\Core /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Evaluator.cpp
+         Evaluator.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>d:\madaan\sarsop\src\evaluator\evaluator.cpp(104): warning C4996: 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::copy': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xstring(1798) : see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::copy'
+     1>d:\madaan\sarsop\src\evaluator\evaluator.cpp(107): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : see declaration of 'fopen'
+     1>d:\madaan\sarsop\src\evaluator\evaluator.cpp(271): warning C4101: 'e' : unreferenced local variable
+     1>d:\madaan\sarsop\src\evaluator\evaluator.cpp(309): warning C4101: 'e' : unreferenced local variable
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\madaan\SARSOP\src\Debug\Evaluator.exe" /NOLOGO D:\madaan\SARSOP\src\Debug\momdp.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\madaan\SARSOP\src\Debug\Evaluator.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\madaan\SARSOP\src\Debug\Evaluator.lib" /MACHINE:X86 /SAFESEH Debug\Evaluator.obj
+         D:\madaan\SARSOP\src\Debug\momdp.lib
+     1>Evaluator.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+         Evaluator.vcxproj -> D:\madaan\SARSOP\src\Debug\Evaluator.exe
+     1>Done Building Project "D:\madaan\SARSOP\src\Evaluator\Evaluator.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.11

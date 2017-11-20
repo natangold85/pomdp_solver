@@ -56,14 +56,14 @@ typedef int state_val;
 
 
 #ifdef DEBUG_TRACE_ON
-	#define DEBUG_TRACE(v) v
+	#define DEBUG_TRACE(v)
 #else
 	#define DEBUG_TRACE(v)
 #endif
 
 
 #ifdef DEBUG_LOG_ON
-	#define DEBUG_LOG(v) v
+	#define DEBUG_LOG(v)
 #else
 	#define DEBUG_LOG(v)
 #endif

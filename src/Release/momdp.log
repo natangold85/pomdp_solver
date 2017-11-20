@@ -1,1 +1,554 @@
-﻿  momdp.vcxproj -> C:\Users\natango\Documents\Visual Studio 2017\Projects\appl\appl-v0.94win\appl-v0.94win\src\Release\momdp.lib
+﻿Build started 20/11/2017 16:29:02.
+     1>Project "C:\Users\moshe\Documents\GitHub\pomdp_solver\src\momdp.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\miniposix /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Parser\Cassandra\include /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Parser\Cassandra /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Parser\POMDPX /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Parser /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Algorithms /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Algorithms\SARSOP /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Models\MOMDP\CoLoc /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Models\MOMDP /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Evaluator /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Bounds /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Simulator /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\OfflineSolver /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Utils /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\MathLib /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Core /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt MathLib\DenseVector.cpp MathLib\MathLib.cpp MathLib\SparseMatrix.cpp MathLib\SparseVector.cpp Core\Actions.cpp Core\Belief.cpp Core\BeliefCache.cpp Core\BeliefCacheSet.cpp Core\BeliefForest.cpp Core\BeliefTreeNode.cpp Core\BeliefWithState.cpp Core\MObject.cpp Core\Observations.cpp Core\States.cpp Core\UniqueBeliefHeap.cpp Core\VariableContainer.cpp Models\MOMDP\StateTransitionXXpY.cpp Models\MOMDP\StateTransitionXY.cpp OfflineSolver\GlobalResource.cpp OfflineSolver\solverUtils.cpp Utils\CPMemUtils.cpp Utils\InfoLog.cpp Utils\md5.cpp Utils\md5wrapper.cpp Utils\SimulationRewardCollector.cpp Utils\StatsCollector.cpp Bounds\AlphaPlane.cpp Bounds\AlphaPlanePool.cpp Bounds\AlphaPlanePoolSet.cpp Bounds\AlphaVectorPolicy.cpp Bounds\BackupAlphaPlaneMOMDP.cpp Bounds\BackupAlphaPlaneMOMDPLite.cpp Bounds\BackupBeliefValuePairMOMDP.cpp Bounds\BackupBeliefValuePairMOMDPLite.cpp Bounds\BeliefValuePair.cpp Bounds\BeliefValuePairPool.cpp Bounds\BeliefValuePairPoolSet.cpp Bounds\BlindLBInitializer.cpp Bounds\FastInfUBInitializer.cpp Bounds\FullObsUBInitializer.cpp Bounds\PruneAlphaPlane.cpp Bounds\PruneBeliefValuePair.cpp Models\MOMDP\BeliefTransitionMOMDP.cpp Models\MOMDP\BeliefTransitionMOMDPLite.cpp Models\MOMDP\BooleanVariable.cpp Models\MOMDP\IVariable.cpp Models\MOMDP\IVariableValue.cpp Models\MOMDP\MOMDP.cpp Models\MOMDP\MOMDPLite.cpp Models\MOMDP\ObservationProbabilities.cpp Models\MOMDP\Rewards.cpp Models\MOMDP\StateTransitionX.cpp Models\MOMDP\StateTransitionY.cpp Models\MOMDP\Variable.cpp Models\MOMDP\VariableCombined.cpp Models\MOMDP\VariableRelation.cpp Models\MOMDP\VariableValue.cpp Algorithms\SARSOP\BinManager.cpp Algorithms\SARSOP\BinManagerSet.cpp Algorithms\SARSOP\Sample.cpp Algorithms\SARSOP\SampleBP.cpp Algorithms\SARSOP\SARSOP.cpp Algorithms\SARSOP\SARSOPPrune.cpp Parser\ParserSelector.cpp Parser\Cassandra\Parser.cpp Parser\Cassandra\POMDP.cpp Parser\Cassandra\pomdpCassandraWrapper.cpp Parser\Cassandra\include\pomdp_spec.tab.cc Parser\Cassandra\include\pomdp_spec.yy.cc Parser\POMDPX\FactoredPomdp.cpp Parser\POMDPX\Function.cpp Parser\POMDPX\ObsAct.cpp Parser\POMDPX\oldPOMDP.cpp Parser\POMDPX\PreCEntry.cpp Parser\POMDPX\PreCMatrix.cpp Parser\POMDPX\SparseEntry.cpp Parser\POMDPX\SparseTable.cpp Parser\POMDPX\State.cpp Parser\POMDPX\StateObsAct.cpp Parser\POMDPX\tinystr.cpp Parser\POMDPX\tinyxml.cpp Parser\POMDPX\tinyxmlerror.cpp Parser\POMDPX\tinyxmlparser.cpp Evaluator\EvaluationEngine.cpp Evaluator\EvaluatorSampleEngine.cpp Simulator\SimulationEngine.cpp
+         DenseVector.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         MathLib.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>MathLib\MathLib.cpp(74): warning C4018: '<' : signed/unsigned mismatch
+     1>MathLib\MathLib.cpp(95): warning C4018: '<' : signed/unsigned mismatch
+     1>MathLib\MathLib.cpp(270): warning C4018: '<' : signed/unsigned mismatch
+     1>MathLib\MathLib.cpp(303): warning C4018: '<' : signed/unsigned mismatch
+     1>MathLib\MathLib.cpp(435): warning C4018: '<' : signed/unsigned mismatch
+     1>MathLib\MathLib.cpp(528): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>MathLib\MathLib.cpp(528): warning C4018: '<' : signed/unsigned mismatch
+     1>MathLib\MathLib.cpp(529): warning C4804: '<' : unsafe use of type 'bool' in operation
+     1>MathLib\MathLib.cpp(529): warning C4018: '<' : signed/unsigned mismatch
+     1>MathLib\MathLib.cpp(612): warning C4018: '<' : signed/unsigned mismatch
+         SparseMatrix.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         SparseVector.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>MathLib\SparseVector.cpp(552): warning C4101: 'buffer' : unreferenced local variable
+         Actions.cpp
+         Belief.cpp
+         BeliefCache.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         BeliefCacheSet.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         BeliefForest.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>Core\BeliefForest.cpp(17): warning C4553: '==' : operator has no effect; did you intend '='?
+         BeliefTreeNode.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         BeliefWithState.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         MObject.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         Observations.cpp
+         States.cpp
+         UniqueBeliefHeap.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>Core\UniqueBeliefHeap.cpp(81): warning C4018: '<' : signed/unsigned mismatch
+         VariableContainer.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>Core\VariableContainer.cpp(22): warning C4018: '<' : signed/unsigned mismatch
+     1>Core\VariableContainer.cpp(29): warning C4018: '<' : signed/unsigned mismatch
+     1>Core\VariableContainer.cpp(33): warning C4018: '<' : signed/unsigned mismatch
+     1>Core\VariableContainer.cpp(50): warning C4018: '>=' : signed/unsigned mismatch
+     1>Core\VariableContainer.cpp(72): warning C4018: '<' : signed/unsigned mismatch
+     1>Core\VariableContainer.cpp(88): warning C4018: '<' : signed/unsigned mismatch
+     1>Core\VariableContainer.cpp(96): warning C4018: '<' : signed/unsigned mismatch
+     1>Core\VariableContainer.cpp(99): warning C4018: '<' : signed/unsigned mismatch
+     1>Core\VariableContainer.cpp(114): warning C4018: '>=' : signed/unsigned mismatch
+         StateTransitionXXpY.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         StateTransitionXY.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         GlobalResource.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>OfflineSolver\GlobalResource.cpp(46): warning C4244: '=' : conversion from 'time_t' to 'int', possible loss of data
+         solverUtils.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>OfflineSolver\solverUtils.cpp(92): warning C4244: '=' : conversion from 'time_t' to 'int', possible loss of data
+     1>OfflineSolver\solverUtils.cpp(365): warning C4244: '=' : conversion from 'time_t' to 'int', possible loss of data
+         Generating Code...
+         Compiling...
+         CPMemUtils.cpp
+     1>Utils\CPMemUtils.cpp(37): warning C4244: 'return' : conversion from 'DWORDLONG' to 'unsigned long', possible loss of data
+         InfoLog.cpp
+         md5.cpp
+         md5wrapper.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         SimulationRewardCollector.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         StatsCollector.cpp
+         AlphaPlane.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(40): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(49): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(77): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(84): warning C4018: '<' : signed/unsigned mismatch
+         AlphaPlanePool.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(40): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(49): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(77): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(84): warning C4018: '<' : signed/unsigned mismatch
+         AlphaPlanePoolSet.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(40): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(49): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(77): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(84): warning C4018: '<' : signed/unsigned mismatch
+     1>Bounds\AlphaPlanePoolSet.cpp(28): warning C4018: '<' : signed/unsigned mismatch
+         AlphaVectorPolicy.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(40): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(49): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(77): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(84): warning C4018: '<' : signed/unsigned mismatch
+     1>Bounds\AlphaVectorPolicy.cpp(49): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>Bounds\AlphaVectorPolicy.cpp(135): warning C4018: '>=' : signed/unsigned mismatch
+     1>Bounds\AlphaVectorPolicy.cpp(145): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(230) : see declaration of 'fscanf'
+     1>Bounds\AlphaVectorPolicy.cpp(158): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>Bounds\AlphaVectorPolicy.cpp(45): warning C4101: 'y2' : unreferenced local variable
+     1>Bounds\AlphaVectorPolicy.cpp(45): warning C4101: 'x2' : unreferenced local variable
+     1>Bounds\AlphaVectorPolicy.cpp(45): warning C4101: 'y1' : unreferenced local variable
+     1>Bounds\AlphaVectorPolicy.cpp(105): warning C4101: 'entryVal' : unreferenced local variable
+     1>Bounds\AlphaVectorPolicy.cpp(45): warning C4101: 'z2' : unreferenced local variable
+     1>Bounds\AlphaVectorPolicy.cpp(45): warning C4101: 't1' : unreferenced local variable
+     1>Bounds\AlphaVectorPolicy.cpp(45): warning C4101: 'x1' : unreferenced local variable
+     1>Bounds\AlphaVectorPolicy.cpp(45): warning C4101: 't0' : unreferenced local variable
+     1>Bounds\AlphaVectorPolicy.cpp(45): warning C4101: 'z1' : unreferenced local variable
+         BackupAlphaPlaneMOMDP.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(40): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(49): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(77): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(84): warning C4018: '<' : signed/unsigned mismatch
+         BackupAlphaPlaneMOMDPLite.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         BackupBeliefValuePairMOMDP.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(40): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(49): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(77): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(84): warning C4018: '<' : signed/unsigned mismatch
+         BackupBeliefValuePairMOMDPLite.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         BeliefValuePair.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         BeliefValuePairPool.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         BeliefValuePairPoolSet.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         BlindLBInitializer.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(40): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(49): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(77): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(84): warning C4018: '<' : signed/unsigned mismatch
+         FastInfUBInitializer.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         FullObsUBInitializer.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>Bounds\FullObsUBInitializer.cpp(223): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
+         Compiling...
+         PruneAlphaPlane.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(40): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(49): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(77): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\moshe\documents\github\pomdp_solver\src\bounds\AlphaPlanePoolSet.h(84): warning C4018: '<' : signed/unsigned mismatch
+         PruneBeliefValuePair.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         BeliefTransitionMOMDP.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         BeliefTransitionMOMDPLite.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         BooleanVariable.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>Models\MOMDP\BooleanVariable.cpp(19): warning C4018: '<' : signed/unsigned mismatch
+     1>Models\MOMDP\BooleanVariable.cpp(47): warning C4018: '<' : signed/unsigned mismatch
+     1>Models\MOMDP\BooleanVariable.cpp(68): warning C4018: '<' : signed/unsigned mismatch
+         IVariable.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         IVariableValue.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         MOMDP.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         MOMDPLite.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         ObservationProbabilities.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         Rewards.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         StateTransitionX.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         StateTransitionY.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         Variable.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>Models\MOMDP\Variable.cpp(16): warning C4018: '<' : signed/unsigned mismatch
+     1>Models\MOMDP\Variable.cpp(44): warning C4018: '<' : signed/unsigned mismatch
+     1>Models\MOMDP\Variable.cpp(56): warning C4018: '<' : signed/unsigned mismatch
+         VariableCombined.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>Models\MOMDP\VariableCombined.cpp(30): warning C4018: '<' : signed/unsigned mismatch
+     1>Models\MOMDP\VariableCombined.cpp(37): warning C4018: '<' : signed/unsigned mismatch
+     1>Models\MOMDP\VariableCombined.cpp(40): warning C4018: '<' : signed/unsigned mismatch
+     1>Models\MOMDP\VariableCombined.cpp(56): warning C4018: '>=' : signed/unsigned mismatch
+         VariableRelation.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         VariableValue.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         BinManager.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>Algorithms\SARSOP\BinManager.cpp(71): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>Algorithms\SARSOP\BinManager.cpp(102): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>Algorithms\SARSOP\BinManager.cpp(137): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>Algorithms\SARSOP\BinManager.cpp(153): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>Algorithms\SARSOP\BinManager.cpp(166): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>Algorithms\SARSOP\BinManager.cpp(182): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+         BinManagerSet.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         Sample.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>Algorithms\SARSOP\Sample.cpp(104): warning C4018: '<' : signed/unsigned mismatch
+     1>Algorithms\SARSOP\Sample.cpp(82): warning C4101: 'ubVal' : unreferenced local variable
+     1>Algorithms\SARSOP\Sample.cpp(82): warning C4101: 'lbVal' : unreferenced local variable
+         Generating Code...
+         Compiling...
+         SampleBP.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>C:\Users\moshe\Documents\GitHub\pomdp_solver\src\Bounds\AlphaPlanePoolSet.h(40): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Users\moshe\Documents\GitHub\pomdp_solver\src\Bounds\AlphaPlanePoolSet.h(49): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Users\moshe\Documents\GitHub\pomdp_solver\src\Bounds\AlphaPlanePoolSet.h(77): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Users\moshe\Documents\GitHub\pomdp_solver\src\Bounds\AlphaPlanePoolSet.h(84): warning C4018: '<' : signed/unsigned mismatch
+     1>Algorithms\SARSOP\SampleBP.cpp(26): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+         SARSOP.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>C:\Users\moshe\Documents\GitHub\pomdp_solver\src\Bounds\AlphaPlanePoolSet.h(40): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Users\moshe\Documents\GitHub\pomdp_solver\src\Bounds\AlphaPlanePoolSet.h(49): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Users\moshe\Documents\GitHub\pomdp_solver\src\Bounds\AlphaPlanePoolSet.h(77): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Users\moshe\Documents\GitHub\pomdp_solver\src\Bounds\AlphaPlanePoolSet.h(84): warning C4018: '<' : signed/unsigned mismatch
+     1>Algorithms\SARSOP\SARSOP.cpp(401): warning C4101: 'e' : unreferenced local variable
+     1>Algorithms\SARSOP\SARSOP.cpp(542): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+         SARSOPPrune.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>C:\Users\moshe\Documents\GitHub\pomdp_solver\src\Bounds\AlphaPlanePoolSet.h(40): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Users\moshe\Documents\GitHub\pomdp_solver\src\Bounds\AlphaPlanePoolSet.h(49): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Users\moshe\Documents\GitHub\pomdp_solver\src\Bounds\AlphaPlanePoolSet.h(77): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Users\moshe\Documents\GitHub\pomdp_solver\src\Bounds\AlphaPlanePoolSet.h(84): warning C4018: '<' : signed/unsigned mismatch
+         ParserSelector.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         Parser.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         POMDP.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>Parser\Cassandra\POMDP.cpp(63): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(204) : see declaration of 'strtok'
+     1>Parser\Cassandra\POMDP.cpp(380): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>Parser\Cassandra\POMDP.cpp(390): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>Parser\Cassandra\POMDP.cpp(407): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>Parser\Cassandra\POMDP.cpp(418): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>Parser\Cassandra\POMDP.cpp(429): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>Parser\Cassandra\POMDP.cpp(468): warning C4996: 'strdup': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strdup. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(245) : see declaration of 'strdup'
+     1>Parser\Cassandra\POMDP.cpp(480): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>Parser\Cassandra\POMDP.cpp(492): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>Parser\Cassandra\POMDP.cpp(505): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>Parser\Cassandra\POMDP.cpp(603): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>Parser\Cassandra\POMDP.cpp(610): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>Parser\Cassandra\POMDP.cpp(623): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>Parser\Cassandra\POMDP.cpp(631): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>Parser\Cassandra\POMDP.cpp(639): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>Parser\Cassandra\POMDP.cpp(677): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>Parser\Cassandra\POMDP.cpp(687): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>Parser\Cassandra\POMDP.cpp(697): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+         pomdpCassandraWrapper.cpp
+         pomdp_spec.tab.cc
+     1>include/pomdp_spec.tab.cc(1306): warning C4065: switch statement contains 'default' but no 'case' labels
+     1>pomdp_spec.y(1497): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>pomdp_spec.y(1508): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+         pomdp_spec.yy.cc
+     1>include/pomdp_spec.yy.cc(1324): warning C4996: 'read': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _read. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\io.h(337) : see declaration of 'read'
+     1>include/pomdp_spec.yy.cc(1324): warning C4996: 'fileno': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _fileno. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(718) : see declaration of 'fileno'
+     1>include/pomdp_spec.yy.cc(1668): warning C4996: 'isatty': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _isatty. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\io.h(332) : see declaration of 'isatty'
+         FactoredPomdp.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>Parser\POMDPX\FactoredPomdp.cpp(102): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>Parser\POMDPX\FactoredPomdp.cpp(131): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>Parser\POMDPX\FactoredPomdp.cpp(161): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>Parser\POMDPX\FactoredPomdp.cpp(326): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(554): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(270): warning C4101: 'pvname' : unreferenced local variable
+     1>Parser\POMDPX\FactoredPomdp.cpp(1077): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(1081): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(1429): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(1435): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(1583): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(1589): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(1624): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(1629): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(1697): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(1704): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(1710): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(1711): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(1779): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(2032): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(2284): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(2291): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(2342): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(2347): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(2511): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(2602): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(2607): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(2785): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(2790): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(2754): warning C4101: 'observ' : unreferenced local variable
+     1>Parser\POMDPX\FactoredPomdp.cpp(2871): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(2872): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(2873): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(2988): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(2972): warning C4101: 'reward' : unreferenced local variable
+     1>Parser\POMDPX\FactoredPomdp.cpp(3044): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(3026): warning C4101: 'reward' : unreferenced local variable
+     1>Parser\POMDPX\FactoredPomdp.cpp(3196): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(3201): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(3365): warning C4101: 'pos' : unreferenced local variable
+     1>Parser\POMDPX\FactoredPomdp.cpp(3466): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(3471): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(3665): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(3673): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(3684): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(3692): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(3708): warning C4018: '>=' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(3729): warning C4018: '>=' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(3750): warning C4018: '>=' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(3768): warning C4018: '>=' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(3784): warning C4018: '>=' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(3805): warning C4018: '>=' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(3826): warning C4018: '>=' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(3853): warning C4018: '>=' : signed/unsigned mismatch
+     1>Parser\POMDPX\FactoredPomdp.cpp(3873): warning C4018: '>=' : signed/unsigned mismatch
+         Function.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>Parser\POMDPX\Function.cpp(181): warning C4018: '<' : signed/unsigned mismatch
+         ObsAct.cpp
+         oldPOMDP.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>Parser\POMDPX\oldPOMDP.cpp(68): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(204) : see declaration of 'strtok'
+     1>Parser\POMDPX\oldPOMDP.cpp(373): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>Parser\POMDPX\oldPOMDP.cpp(380): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>Parser\POMDPX\oldPOMDP.cpp(393): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>Parser\POMDPX\oldPOMDP.cpp(401): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>Parser\POMDPX\oldPOMDP.cpp(409): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>Parser\POMDPX\oldPOMDP.cpp(447): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>Parser\POMDPX\oldPOMDP.cpp(457): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>Parser\POMDPX\oldPOMDP.cpp(467): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+         PreCEntry.cpp
+         PreCMatrix.cpp
+         Unknown compiler version - please run the configure tests and report the results
+         SparseEntry.cpp
+         SparseTable.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>Parser\POMDPX\SparseTable.cpp(34): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\SparseTable.cpp(114): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\SparseTable.cpp(151): warning C4018: '>=' : signed/unsigned mismatch
+     1>Parser\POMDPX\SparseTable.cpp(225): warning C4018: '<=' : signed/unsigned mismatch
+     1>Parser\POMDPX\SparseTable.cpp(251): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\SparseTable.cpp(416): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\SparseTable.cpp(424): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\SparseTable.cpp(435): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\SparseTable.cpp(438): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\SparseTable.cpp(457): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\SparseTable.cpp(458): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\SparseTable.cpp(499): warning C4018: '<' : signed/unsigned mismatch
+     1>Parser\POMDPX\SparseTable.cpp(480): warning C4101: 'tempEntryValue' : unreferenced local variable
+         State.cpp
+         StateObsAct.cpp
+         tinystr.cpp
+         Generating Code...
+     1>c:\users\moshe\documents\github\pomdp_solver\src\parser\pomdpx\sparsetable.cpp(525): warning C4715: 'SparseTable::findPosition' : not all control paths return a value
+     1>c:\users\moshe\documents\github\pomdp_solver\src\parser\pomdpx\function.cpp(173): warning C4715: 'Function::getPosition' : not all control paths return a value
+     1>c:\users\moshe\documents\github\pomdp_solver\src\parser\pomdpx\factoredpomdp.cpp(1262): warning C4715: 'momdp::FactoredPomdp::isPreviousTimeSlice' : not all control paths return a value
+     1>c:\users\moshe\documents\github\pomdp_solver\src\parser\pomdpx\factoredpomdp.cpp(1276): warning C4715: 'momdp::FactoredPomdp::isCurrentTimeSlice' : not all control paths return a value
+         Compiling...
+         tinyxml.cpp
+         tinyxmlerror.cpp
+         tinyxmlparser.cpp
+         EvaluationEngine.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>Evaluator\EvaluationEngine.cpp(81): warning C4018: '<' : signed/unsigned mismatch
+         EvaluatorSampleEngine.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>Evaluator\EvaluatorSampleEngine.cpp(109): warning C4018: '<' : signed/unsigned mismatch
+     1>Evaluator\EvaluatorSampleEngine.cpp(85): warning C4101: 'ubVal' : unreferenced local variable
+     1>Evaluator\EvaluatorSampleEngine.cpp(85): warning C4101: 'lbVal' : unreferenced local variable
+         SimulationEngine.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>Simulator\SimulationEngine.cpp(120): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\miniposix /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Parser\Cassandra\include /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Parser\Cassandra /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Parser\POMDPX /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Parser /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Algorithms /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Algorithms\SARSOP /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Models\MOMDP\CoLoc /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Models\MOMDP /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Evaluator /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Bounds /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Simulator /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\OfflineSolver /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Utils /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\MathLib /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Core /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt Bounds\xml_parse_lib.c "Parser\Cassandra\decision-tree.c" "Parser\Cassandra\imm-reward.c" Parser\Cassandra\mdpCassandra.c Parser\Cassandra\parse_err.c Parser\Cassandra\parse_hash.c "Parser\Cassandra\sparse-matrix.c" miniposix\getopt.c miniposix\getopt1.c miniposix\getopt_init.c
+         xml_parse_lib.c
+     1>Bounds\xml_parse_lib.c(275): warning C4101: 'm' : unreferenced local variable
+         decision-tree.c
+     1>Parser\Cassandra\decision-tree.c(104): warning C4013: 'checkAllocatedPointer' undefined; assuming extern returning int
+         imm-reward.c
+         mdpCassandra.c
+     1>Parser\Cassandra\mdpCassandra.c(180): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>Parser\Cassandra\mdpCassandra.c(450): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+         parse_err.c
+     1>Parser\Cassandra\parse_err.c(87): warning C4013: 'checkAllocatedPointer' undefined; assuming extern returning int
+     1>Parser\Cassandra\parse_err.c(151): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>Parser\Cassandra\parse_err.c(159): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         parse_hash.c
+     1>Parser\Cassandra\parse_hash.c(127): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         sparse-matrix.c
+     1>Parser\Cassandra\sparse-matrix.c(46): warning C4013: 'checkAllocatedPointer' undefined; assuming extern returning int
+         getopt.c
+         getopt1.c
+         getopt_init.c
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"C:\Users\moshe\Documents\GitHub\pomdp_solver\src\Release\momdp.lib" /NOLOGO /LTCG Release\DenseVector.obj
+         Release\MathLib.obj
+         Release\SparseMatrix.obj
+         Release\SparseVector.obj
+         Release\Actions.obj
+         Release\Belief.obj
+         Release\BeliefCache.obj
+         Release\BeliefCacheSet.obj
+         Release\BeliefForest.obj
+         Release\BeliefTreeNode.obj
+         Release\BeliefWithState.obj
+         Release\MObject.obj
+         Release\Observations.obj
+         Release\States.obj
+         Release\UniqueBeliefHeap.obj
+         Release\VariableContainer.obj
+         Release\StateTransitionXXpY.obj
+         Release\StateTransitionXY.obj
+         Release\GlobalResource.obj
+         Release\solverUtils.obj
+         Release\CPMemUtils.obj
+         Release\InfoLog.obj
+         Release\md5.obj
+         Release\md5wrapper.obj
+         Release\SimulationRewardCollector.obj
+         Release\StatsCollector.obj
+         Release\AlphaPlane.obj
+         Release\AlphaPlanePool.obj
+         Release\AlphaPlanePoolSet.obj
+         Release\AlphaVectorPolicy.obj
+         Release\BackupAlphaPlaneMOMDP.obj
+         Release\BackupAlphaPlaneMOMDPLite.obj
+         Release\BackupBeliefValuePairMOMDP.obj
+         Release\BackupBeliefValuePairMOMDPLite.obj
+         Release\BeliefValuePair.obj
+         Release\BeliefValuePairPool.obj
+         Release\BeliefValuePairPoolSet.obj
+         Release\BlindLBInitializer.obj
+         Release\FastInfUBInitializer.obj
+         Release\FullObsUBInitializer.obj
+         Release\PruneAlphaPlane.obj
+         Release\PruneBeliefValuePair.obj
+         Release\xml_parse_lib.obj
+         Release\BeliefTransitionMOMDP.obj
+         Release\BeliefTransitionMOMDPLite.obj
+         Release\BooleanVariable.obj
+         Release\IVariable.obj
+         Release\IVariableValue.obj
+         Release\MOMDP.obj
+         Release\MOMDPLite.obj
+         Release\ObservationProbabilities.obj
+         Release\Rewards.obj
+         Release\StateTransitionX.obj
+         Release\StateTransitionY.obj
+         Release\Variable.obj
+         Release\VariableCombined.obj
+         Release\VariableRelation.obj
+         Release\VariableValue.obj
+         Release\BinManager.obj
+         Release\BinManagerSet.obj
+         Release\Sample.obj
+         Release\SampleBP.obj
+         Release\SARSOP.obj
+         Release\SARSOPPrune.obj
+         Release\ParserSelector.obj
+         "Release\decision-tree.obj"
+         "Release\imm-reward.obj"
+         Release\mdpCassandra.obj
+         Release\parse_err.obj
+         Release\parse_hash.obj
+         Release\Parser.obj
+         Release\POMDP.obj
+         Release\pomdpCassandraWrapper.obj
+         "Release\sparse-matrix.obj"
+         Release\pomdp_spec.tab.obj
+         Release\pomdp_spec.yy.obj
+         Release\FactoredPomdp.obj
+         Release\Function.obj
+         Release\ObsAct.obj
+         Release\oldPOMDP.obj
+         Release\PreCEntry.obj
+         Release\PreCMatrix.obj
+         Release\SparseEntry.obj
+         Release\SparseTable.obj
+         Release\State.obj
+         Release\StateObsAct.obj
+         Release\tinystr.obj
+         Release\tinyxml.obj
+         Release\tinyxmlerror.obj
+         Release\tinyxmlparser.obj
+         Release\getopt.obj
+         Release\getopt1.obj
+         Release\getopt_init.obj
+         Release\EvaluationEngine.obj
+         Release\EvaluatorSampleEngine.obj
+         Release\SimulationEngine.obj
+         momdp.vcxproj -> C:\Users\moshe\Documents\GitHub\pomdp_solver\src\Release\momdp.lib
+     1>Done Building Project "C:\Users\moshe\Documents\GitHub\pomdp_solver\src\momdp.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:01:19.59

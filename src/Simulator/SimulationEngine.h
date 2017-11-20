@@ -36,7 +36,9 @@ namespace momdp
 
 
             void display(belief_vector& b, ostream& s);
-            int runFor(int iters, const BeliefWithState& startVec, SparseVector startBeliefX, ofstream* streamOut, double& reward, double& expReward);
+			int runFor(int iters, const BeliefWithState& startVec, SparseVector startBeliefX, ofstream* streamOut, double& reward, double& expReward);
+
+			void GetActionRewardVec(int iters, const BeliefWithState& startVec, SparseVector startBeliefX, std::vector<double> & rewards);
 
 
 

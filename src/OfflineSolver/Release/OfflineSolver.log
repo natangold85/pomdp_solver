@@ -1,3 +1,26 @@
-﻿  LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
-  OfflineSolver.vcxproj -> C:\Users\natango\Documents\Visual Studio 2017\Projects\appl\appl-v0.94win\appl-v0.94win\src\Release\pomdpsol.exe
-  OfflineSolver.vcxproj -> C:\Users\natango\Documents\Visual Studio 2017\Projects\appl\appl-v0.94win\appl-v0.94win\src\Release\pomdpsol.pdb (Full PDB)
+﻿Build started 20/11/2017 16:30:23.
+     1>Project "C:\Users\moshe\Documents\GitHub\pomdp_solver\src\OfflineSolver\OfflineSolver.vcxproj" on node 4 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\miniposix /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Parser\Cassandra\include /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Parser\Cassandra /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Parser\POMDPX /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Parser /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Algorithms /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Algorithms\SARSOP /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Models\MOMDP\CoLoc /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Models\MOMDP /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Evaluator /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Bounds /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Simulator /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\OfflineSolver /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Utils /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\MathLib /IC:\Users\moshe\Documents\GitHub\pomdp_solver\src\\Core /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt solver.cpp
+         solver.cpp
+         Unknown compiler version - please run the configure tests and report the results
+     1>C:\Users\moshe\Documents\GitHub\pomdp_solver\src\Bounds\AlphaPlanePoolSet.h(40): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Users\moshe\Documents\GitHub\pomdp_solver\src\Bounds\AlphaPlanePoolSet.h(49): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Users\moshe\Documents\GitHub\pomdp_solver\src\Bounds\AlphaPlanePoolSet.h(77): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Users\moshe\Documents\GitHub\pomdp_solver\src\Bounds\AlphaPlanePoolSet.h(84): warning C4018: '<' : signed/unsigned mismatch
+     1>solver.cpp(281): warning C4018: '<' : signed/unsigned mismatch
+     1>solver.cpp(313): warning C4018: '<' : signed/unsigned mismatch
+     1>solver.cpp(363): warning C4018: '<' : signed/unsigned mismatch
+     1>solver.cpp(411): warning C4018: '<' : signed/unsigned mismatch
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1186,5): warning MSB8012: TargetPath(C:\Users\moshe\Documents\GitHub\pomdp_solver\src\Release\OfflineSolver.exe) does not match the Linker's OutputFile property value (C:\Users\moshe\Documents\GitHub\pomdp_solver\src\Release\pomdpsol.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1188,5): warning MSB8012: TargetName(OfflineSolver) does not match the Linker's OutputFile property value (pomdpsol). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\moshe\Documents\GitHub\pomdp_solver\src\Release\pomdpsol.exe" /INCREMENTAL:NO /NOLOGO C:\Users\moshe\Documents\GitHub\pomdp_solver\src\Release\momdp.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\moshe\Documents\GitHub\pomdp_solver\src\Release\OfflineSolver.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\moshe\Documents\GitHub\pomdp_solver\src\Release\OfflineSolver.lib" /MACHINE:X86 /SAFESEH Release\solver.obj
+         C:\Users\moshe\Documents\GitHub\pomdp_solver\src\Release\momdp.lib
+         LINK : /LTCG specified but no code generation required; remove /LTCG from the link command line to improve linker performance
+         OfflineSolver.vcxproj -> C:\Users\moshe\Documents\GitHub\pomdp_solver\src\Release\OfflineSolver.exe
+     1>Done Building Project "C:\Users\moshe\Documents\GitHub\pomdp_solver\src\OfflineSolver\OfflineSolver.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:07.09

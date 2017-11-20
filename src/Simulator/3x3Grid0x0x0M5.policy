@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Policy version="0.1" type="value" model="3x3Grid0x0x0M5.pomdp" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="policyx.xsd">
+<AlphaVector vectorLength="11" numObsValue="1" numVectors="3">
+<Vector action="3" obsValue="0">0 0 0 0 0 0 0.892555 0.944751 1 0 0 </Vector>
+<Vector action="7" obsValue="0">0.892555 0 0 0 0.944751 0 0 0 1 0 0 </Vector>
+<Vector action="1" obsValue="0">0 0 0.892555 0 0 0.944751 0 0 1 0 0 </Vector>
+</AlphaVector> </Policy>

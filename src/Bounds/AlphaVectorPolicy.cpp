@@ -203,6 +203,7 @@ int AlphaVectorPolicy::getBestActionLookAhead(BeliefWithState& b, REAL_VALUE& ma
 
 	DEBUG_TRACE(cout << "getBestActionLookAhead" << endl; );
 
+
 	for(Actions::iterator aIter = problem->actions->begin(); aIter != problem->actions->end(); aIter ++) 
 	{
 		int a = aIter.index();
@@ -249,7 +250,7 @@ int AlphaVectorPolicy::getBestActionLookAhead(BeliefWithState& b, REAL_VALUE& ma
 
 				FOR(o, opv.size()) 
 				{
-					DEBUG_TRACE(cout << "o " << o << endl; );
+					//DEBUG_TRACE(cout << "o " << o << endl; );
 
 					double oprob = opv(o);
 					if (oprob > OBS_IS_ZERO_EPS) 
@@ -288,6 +289,7 @@ int AlphaVectorPolicy::getBestActionLookAhead(BeliefWithState& b, REAL_VALUE& ma
 		}
 		assert(maxActionLB !=  -DBL_MAX);
 	}
+
 	return maxAction;
 }
 
@@ -744,3 +746,97 @@ int AlphaVectorPolicy::getBestAction(std::vector<belief_vector>& belYs, DenseVec
 	return maxAction;
 }
 
+
+void AlphaVectorPolicy::GetRewardVec(BeliefWithState& b, std::vector<double> & rewardVec)
+{
+	double maxActionLB = -DBL_MAX;
+	int maxAction = 0;
+	obs_prob_vector  opv; // outcome_prob_vector opv;
+	SharedPointer<BeliefWithState> nextb;
+	obsState_prob_vector spv;  // outcome probability for values of observed state
+	SharedPointer<SparseVector> jspv(new SparseVector());
+
+	DEBUG_TRACE(cout << "getBestActionLookAhead" << endl;);
+
+
+	for (Actions::iterator aIter = problem->actions->begin(); aIter != problem->actions->end(); aIter++)
+	{
+		int a = aIter.index();
+		DEBUG_TRACE(cout << "a " << a << endl;);
+
+		double sum = 0.0;
+		double immediateReward = problem->rewards->getReward(b, a);
+
+		if (problem->XStates->size() == 1)
+		{
+			DEBUG_TRACE(cout << "spv1 " << endl;);
+			spv.resize(1);
+			spv.push_back(0, 1.0);
+		}
+		else
+		{
+			DEBUG_TRACE(cout << "spv2 " << endl;);
+			problem->getObsStateProbVector(spv, b, a); // P(Xn|cn.s,a)
+		}
+
+		DEBUG_TRACE(cout << "spv " << endl;);
+		DEBUG_TRACE(spv.write(cout) << endl;);
+
+		FOR(Xn, spv.size())
+		{
+			DEBUG_TRACE(cout << "Xn " << Xn << endl;);
+			double sprob = spv(Xn);
+			if (sprob > OBS_IS_ZERO_EPS)
+			{
+				problem->getJointUnobsStateProbVector(*jspv, &b, a, Xn);
+
+				DEBUG_TRACE(cout << "jspv " << endl;);
+				DEBUG_TRACE(jspv->write(cout) << endl;);
+
+
+				//problem->getStatenObsProbVectorFast(ospv, a, Xn, jspv);
+				problem->getObsProbVectorFast(opv, a, Xn, *jspv); // only the joint prob is useful for later but we calculate the observation prob P(o|Xn,cn.s,a)
+				//problem->getObsProbVector(opv, cn.s, a, Xn);
+
+				DEBUG_TRACE(cout << "opv " << endl;);
+				DEBUG_TRACE(opv.write(cout) << endl;);
+
+
+
+				FOR(o, opv.size())
+				{
+					//DEBUG_TRACE(cout << "o " << o << endl; );
+
+					double oprob = opv(o);
+					if (oprob > OBS_IS_ZERO_EPS)
+					{
+						double obsProb = oprob * sprob; // P(o,Xn|cn.s,a) = P(Xn|cn.s,a) * P(o|Xn,cn.s,a)
+						//nextb = problem->getNextBeliefStvalFast(sp, a, o, Xn, jspv);
+
+						nextb = problem->beliefTransition->nextBelief2(NULL, a, o, Xn, jspv);
+
+						DEBUG_TRACE(cout << "nextb sval" << nextb->sval << endl;);
+						DEBUG_TRACE(nextb->bvec->write(cout) << endl;);
+
+						SharedPointer<AlphaPlane> bestAlpha = alphaPlanePoolSet->getBestAlphaPlane1(*nextb);
+						double childLB = inner_prod(*bestAlpha->alpha, *nextb->bvec);
+						sum += childLB * obsProb;
+
+						DEBUG_TRACE(cout << "childLB " << childLB << endl;);
+						DEBUG_TRACE(cout << "sum " << sum << endl;);
+
+						// nextb deletion will be handled by smart pointers
+
+					}
+				}
+			}
+		}
+		sum *= problem->getDiscount();
+		sum += immediateReward;
+
+		DEBUG_TRACE(cout << "sum " << sum << endl;);
+
+		rewardVec[a] = sum;
+	}
+
+}
